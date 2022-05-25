@@ -4,7 +4,27 @@ html {
 
 body {
   height: 100%;
-  margin: 0;
+  margin: 10%;
   overflow: hidden;
-  background: linear-gradient(to bottom, #202020, #111119);
+  cursor: url(./images/cursor1.png);
+  background: linear-gradient(to bottom, #392c4b, #4b2438);
 }
+/* body::-webkit-scrollbar {
+  background-color: rgba(247, 96, 114, 1);
+  width: 5px;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(247, 96, 114, 1);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(252, 190, 203, 1);
+} */
+
+.center{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
