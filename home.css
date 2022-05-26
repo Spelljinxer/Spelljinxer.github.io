@@ -10,6 +10,8 @@ body {
   overflow: hidden;
   cursor: url(./images/cursor1.png), default;
   background-image: url(./images/home/home_bg.png);
+  padding-bottom: 0%;
+  margin: 0 auto;
 }
 /* ------------------------- scroll bar --------------------- */
 body::-webkit-scrollbar {
@@ -101,13 +103,17 @@ button:hover{
   cursor: url(./images/cursor2.png), default;
 }
 
-/*------------------------ video ------------------------- */
+/*--------------- welcome text ---------------------- */
+
 .welcome h1{
     text-align: center;
     color: white;
     font-style: italic;
     letter-spacing: 5px;
 }
+
+/*------------------------ video ------------------------- */
+
 .video-container {
   width: 994px;
   height: 559px;
@@ -127,6 +133,9 @@ hr{
     background-color: rgba(247, 96, 114, 1);
     margin-top: 35px;
 }
+
+/*------------------------ bottom button ------------------------- */
+
 .YaeMiko{
     display: flex;
     justify-content: center;
@@ -144,13 +153,6 @@ hr{
 }
 
 .YaeMiko button{
-    /* background-color:  rgba(39, 39, 39, 0.473);
-    border-radius: 15px;
-    cursor: default;
-    transition: all 0.3s ease 0s;
-    width: 200px;
-    height: 50px;
-     */
      background-color:  rgba(39, 39, 39, 0.473);
      border-radius: 15px;
      cursor: default;
@@ -163,6 +165,43 @@ hr{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
     cursor: url(./images/cursor2.png), default;
 }
+
+/* --------------------------- end ------------------------- */
+.end{
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.end h1{
+    color: white;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: 'Monstserrat';
+    font-size: 20px;
+}
+
+/* ------------------------- footer ------------------------- */
+.footer{
+    position: bottom;
+    left: 200px;
+    bottom: 200px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 35px;
+    margin-top: -35px;
+}
+.footer-image{
+    padding-top: 0.2%;
+    width: 25px;
+    justify-content: center;
+}
+
+span + span {
+    margin-left: 10px;
+}
+
 
 
   
