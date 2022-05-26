@@ -8,7 +8,7 @@ body {
   /* margin: 10%; */
   overflow: hidden;
   cursor: url(./images/cursor1.png), default;
-  background: linear-gradient(to bottom, #392c4b, #4b2438);
+  background: linear-gradient(to bottom, #57466e, #4b2438);
 }
 /* ------------------------- scroll bar --------------------- */
 body::-webkit-scrollbar {
@@ -22,32 +22,6 @@ body::-webkit-scrollbar-track {
  
 body::-webkit-scrollbar-thumb {
   background-color: rgba(252, 190, 203, 1);
-}
-/* ------------------------------Yae Image----------------------------------------- */
-.container {
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.main-image{
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  z-index: 1;
-  
-}
-
-.border{
-  position: inherit;
-  margin-left: auto;
-  margin-right: auto;
-  animation: spin 35s infinite linear;
-}
-@keyframes spin { 
-  100% { 
-    transform: rotateZ(360deg); 
-  }
 }
 
 /* ------------------------------ Header Bar----------------------------------- */
@@ -100,5 +74,34 @@ button{
 button:hover{
   background-color: rgba(247, 96, 114, 0.4);
 }
+
+/* ------------------------------Yae Image----------------------------------------- */
+.container {
+  text-align: center;
+  overflow: hidden;
+}
+
+.main-image{
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  position: absolute;
+  z-index: 1;
+  
+}
+
+.border{
+  /* margin-left: auto;
+  margin-right: auto; */
+  position: relative;
+  animation: spin 35s infinite linear;
+}
+@keyframes spin { 
+  100% { 
+    transform: rotateZ(360deg); 
+  }
+}
+
+
 
 
