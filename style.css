@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 html {
+  height: 100%;
   overflow-y: scroll;
 }
 
@@ -9,8 +10,9 @@ body {
   overflow: hidden;
   cursor: url(./images/cursor1.png), default;
   background: linear-gradient(to bottom, #57466e, #4b2438);
-  padding-bottom: 0%;
   margin: 0 auto;
+  padding: 0;
+  background-attachment: fixed;
 }
 /* ------------------------- scroll bar --------------------- */
 body::-webkit-scrollbar {
@@ -127,6 +129,33 @@ button:hover{
     transform: rotateZ(360deg); 
   }
 }
+
+/*----------------------- main-text ------------------------- */
+
+.main-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.divider-image{
+  width: 100%;
+}
+
+.fade-in{
+  opacity: 0;
+  transition: opacity 1000ms ease-in;
+}
+.fade-in.appear{
+  opacity: 1;
+}
+
 
 
 /* ------------------------- footer ------------------------- */
