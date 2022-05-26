@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+  overflow-y: scroll;
 }
 
 body {
@@ -22,9 +22,29 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(252, 190, 203, 1);
 } */
 
-.center{
-  display: flex;
+.container {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-image{
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
+  z-index: 1;
+  
+}
+
+.border{
+  position: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  animation: spin 35s infinite linear;
+}
+@keyframes spin { 
+  100% { 
+    transform: rotateZ(360deg); 
+  }
 }
 
