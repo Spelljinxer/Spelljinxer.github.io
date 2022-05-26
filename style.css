@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 html {
   overflow-y: scroll;
 }
 
 body {
-  height: 100%;
-  margin: 10%;
+  /* margin: 10%; */
   overflow: hidden;
-  cursor: url(./images/cursor1.png);
+  cursor: url(./images/cursor1.png), default;
   background: linear-gradient(to bottom, #392c4b, #4b2438);
 }
-/* body::-webkit-scrollbar {
+/* ------------------------- scroll bar --------------------- */
+body::-webkit-scrollbar {
   background-color: rgba(247, 96, 114, 1);
   width: 5px;
 }
@@ -20,8 +22,8 @@ body::-webkit-scrollbar-track {
  
 body::-webkit-scrollbar-thumb {
   background-color: rgba(252, 190, 203, 1);
-} */
-
+}
+/* ------------------------------Yae Image----------------------------------------- */
 .container {
   text-align: center;
   position: relative;
@@ -47,4 +49,56 @@ body::-webkit-scrollbar-thumb {
     transform: rotateZ(360deg); 
   }
 }
+
+/* ------------------------------ Header Bar----------------------------------- */
+.logo{
+  width: 100px;
+  cursor: pointer;
+}
+li, a, button{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  /* text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out; */
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav-links{
+  list-style: none;
+}
+.nav-links li{
+  display: inline-block;
+  padding: 0 25px;
+}
+
+.nav_links li, a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li, a:hover{
+  color:rgba(247, 96, 114, 1)
+}
+
+button{
+  background-color:  rgba(252, 190, 203, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover{
+  background-color: rgba(247, 96, 114, 0.4);
+}
+
 
