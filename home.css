@@ -29,7 +29,30 @@ body::-webkit-scrollbar-thumb {
 .logo{
   width: 100px;
   cursor: pointer;
+  animation: float 6s ease-in-out infinite;
+  box-sizing: border-box;
+  border: 2px white solid;  
+  border-radius: 50%;
 }
+.logo:hover{
+    cursor: url(./images/cursor2.png), default;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
 li, a, button{
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -61,7 +84,8 @@ header{
 }
 
 .nav_links li, a:hover{
-  color:rgba(247, 96, 114, 1)
+  color:rgba(247, 96, 114, 1);
+  cursor: url(./images/cursor2.png), default;
 }
 
 button{
@@ -74,6 +98,7 @@ button{
 
 button:hover{
   background-color: rgba(247, 96, 114, 0.4);
+  cursor: url(./images/cursor2.png), default;
 }
 
 /*------------------------ video ------------------------- */
@@ -134,10 +159,9 @@ hr{
      height: 50px;
 
 }
-.YaeMiko button:hover,
-.YaeMiko button:focus{
+.YaeMiko button:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
-    cursor: url(./images/cursor1.png), default;
+    cursor: url(./images/cursor2.png), default;
 }
 
 
