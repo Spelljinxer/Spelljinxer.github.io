@@ -36,11 +36,15 @@ body {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-property: background-color, color;
+  opacity: 0;
 }
 #back-to-top-btn:hover{
   background-color: #333;
   color: #fff;
   box-shadow: 0 0 15px 0px rgba(0, 0, 0, 1);
+}
+#back-to-top-btn:after{
+  opacity: 1;
 }
 
 .btnEntrance {

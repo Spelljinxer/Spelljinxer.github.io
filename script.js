@@ -20,11 +20,10 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-
-const backToTopButton = document.querySelector("#back-to-top-btn");
-
 window.addEventListener("scroll", scrollFunction);
 
+
+const backToTopButton = document.querySelector("#back-to-top-btn");
 function scrollFunction() {
   if (window.pageYOffset > 950) { 
     if(!backToTopButton.classList.contains("btnEntrance")) {
