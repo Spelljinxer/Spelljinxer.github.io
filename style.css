@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
 
 html {
   height: 100%;
@@ -61,9 +62,6 @@ li, a, button{
   font-weight: 500;
   color: #fff;
   text-decoration: none;
-  /* text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease-in-out; */
 }
 
 header{
@@ -136,19 +134,47 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  padding-bottom: 200px;
+  overflow-wrap: break-word;
+  padding-left: -20%;
+  margin: 0px auto;
 }
-.container{
+.text-container{
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.divider-image{
-  width: 100%;
+.main-text hr{
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
 }
 
+.text-container p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  display: relative;
+  margin: 25px auto;
+}
+
+.fade-in .gif-one{
+  width: 35%;
+  float: left;
+  border-color: rgba(247, 96, 114, 1);
+  border-style: solid;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 25px auto;
+  margin-right: 25px;
+  
+}
 .fade-in{
+  max-width: 1200px;
   opacity: 0;
   transition: opacity 1000ms ease-in;
 }
@@ -156,7 +182,134 @@ button:hover{
   opacity: 1;
 }
 
+/* ----------------------- divider ---------------------------- */
+.divider{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.2;
+}
+.divider-image{
+  width: 20%;
+}
 
+.divider2{
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.2;
+}
+
+/* --------------- second part ------------------- */
+.main-text-two{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-wrap: break-word;
+  margin-top: 20px;
+}
+
+.text-container-two{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.fade-in-two{
+  max-width: 1200px;
+  overflow-wrap: break-word;
+}
+
+
+.text-container-two p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  /* display: relative;
+  margin: 25px auto; */
+  margin: 0px auto;
+  margin-bottom: 27px;
+}
+.text-container-two hr{
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+}
+.fade-in-two .gif-two{
+  width: 40%;
+  float: right;
+  border-color: rgba(247, 96, 114, 1);
+  border-style: solid;
+  /* display: table-cell;
+  vertical-align: middle;
+  margin-left: 25px; */
+  margin: 0 25px;
+}
+.reveal{
+  opacity: 0;
+  transition: opacity 650ms ease-in;
+}
+
+.reveal.active{
+  opacity: 1;
+}
+
+/* --------------- third part ------------------- */
+
+.main-text-three{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-wrap: break-word;
+  padding-left: -20%;
+  margin: 0px auto;
+}
+.text-container-three{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+.text-container-three p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  display: relative;
+  margin: 25px auto;
+}
+
+.fade-in-three .gif-three{
+  width: 35%;
+  float: left;
+  border-color: rgba(247, 96, 114, 1);
+  border-style: solid;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 25px auto;
+  margin-right: 25px;
+  
+}
+.fade-in-three{
+  max-width: 1200px;
+  opacity: 0;
+  transition: opacity 1000ms ease-in;
+  margin-top: 55px;
+}
+.fade-in-three.appear{
+  opacity: 1;
+}
 
 /* ------------------------- footer ------------------------- */
 .footer{
