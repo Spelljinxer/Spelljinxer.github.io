@@ -168,6 +168,42 @@ button:hover{
     background-color: rgba(247, 96, 114, 0.4);
     cursor: url(./images/cursor2.png), default;
 }
+
+/* ------------------------ options ------------------------ */
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    animation: fadein 2.5s;
+
+    
+    margin-left: 200px;
+    margin-right: auto;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.column{
+    padding-right: 100px;
+}
+.option-image{
+    transition: .5s;
+    width: 75%;
+}
+.option-image:hover{
+    transition: .25s;
+    cursor: url(./images/cursor2.png), default;
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 1);
+}
+
+
+
 /* ------------------------- footer ------------------------- */
 .footer{
     position: bottom;
