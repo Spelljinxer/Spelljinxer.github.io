@@ -401,24 +401,25 @@ button:hover{
 
 
 /* ------------------------- footer ------------------------- */
-.footer{
-  position: bottom;
-  left: 200px;
-  bottom: 200px;
-  width: 100%;
+#footer{
   background-color: black;
-  color: white;
-  text-align: center;
+  position: relative;
   height: 35px;
   margin-top: -35px;
-}
-.footer-image{
-  padding-top: 0.3%;
-  width: 25px;
-  justify-content: center;
+  clear: both;
 }
 
-span + span {
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.footer-image{
+  width: 25px;
+}
+span + span{
   margin-left: 10px;
 }
 
