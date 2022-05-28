@@ -169,16 +169,30 @@ button:hover{
     cursor: url(./images/cursor2.png), default;
 }
 
+/*-------------------- pick a build --------------------- */
+
+.PICK{
+    text-align: center;
+}
+
+.PICK h1{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 /* ------------------------ options ------------------------ */
+
+
 .options{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 150px;
+    padding-top: 100px;
     animation: fadein 2.5s;
 
-    
-    margin-left: 200px;
+    margin-left: 120px;
     margin-right: auto;
 }
 @keyframes fadein {
@@ -190,18 +204,40 @@ button:hover{
     }
 }
 .column{
-    padding-right: 100px;
+    padding-right: 125px;
 }
 .option-image{
     transition: .5s;
-    width: 75%;
+    width: 250px;
+    position: relative;
+    display: block;
 }
 .option-image:hover{
     transition: .25s;
     cursor: url(./images/cursor2.png), default;
     box-shadow: 0 0 25px 5px rgba(0, 0, 0, 1);
+    width: 275px;
+}
+.content-details{
+    margin-top: 2px;
 }
 
+
+
+.content-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.content-text{
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
 
 
 /* ------------------------- footer ------------------------- */
