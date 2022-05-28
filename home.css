@@ -111,6 +111,7 @@ button:hover{
     color: white;
     font-style: italic;
     letter-spacing: 5px;
+    padding-bottom: 15px;
 }
 
 /*------------------------ video ------------------------- */

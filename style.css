@@ -43,9 +43,6 @@ body {
   color: #fff;
   box-shadow: 0 0 15px 0px rgba(0, 0, 0, 1);
 }
-#back-to-top-btn:after{
-  opacity: 1;
-}
 
 .btnEntrance {
   animation-duration: 0.5s;
