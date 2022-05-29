@@ -107,76 +107,70 @@ button:hover{
     cursor: url(./images/cursor2.png), default;
 }
 
-/*-------------------- pick a build --------------------- */
+/*---------------------- to top ------------------------ */
 
-.PICK{
-    text-align: center;
-    animation: fadein 2.5s;
-}
-
-.PICK h1{
-    color: white;
-    letter-spacing: 2px;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-/* ------------------------ options ------------------------ */
-
-
-.options{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 100px;
-    animation: fadein 2.5s;
-
-    margin-left: 120px;
-    margin-right: auto;
-}
-@keyframes fadein {
+#back-to-top-btn{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: rgba(247, 96, 114, 1);
+    outline: none;
+    border: 3px solid rgba(247, 96, 114, 1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+    opacity: 0;
+  }
+  #back-to-top-btn:hover{
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 1);
+  }
+  
+  .btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+  }
+  
+  @keyframes btnEntrance {
     from {
-        opacity: 0;
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
     }
     to {
-        opacity: 1;
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
     }
-}
-.column{
-    padding-right: 125px;
-}
-.option-image{
-    transition: .5s;
-    width: 250px;
-    position: relative;
-    display: block;
-}
-.option-image:hover{
-    transition: .25s;
-    cursor: url(./images/cursor2.png), default;
-    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 1);
-    width: 275px;
-}
-.content-details{
-    margin-top: 2px;
-}
+  }
+  
+  .btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;  
+    animation-name: btnExit;
+  }
+  
+  @keyframes btnExit {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
 
-
-
-.content-title{
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-}
-.content-text{
-    font-size: 14px;
-    font-weight: 300;
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-}
+/*-------------------- main one --------------------- */
 
 
 /* ------------------------- footer ------------------------- */
