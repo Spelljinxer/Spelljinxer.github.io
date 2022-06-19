@@ -67,8 +67,15 @@ canvas {
 #welcome p{
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
-  color: white;
   letter-spacing: 1px;
+}
+mark.yellow{
+  color: rgb(248, 223, 0);
+  background: none;
+}
+mark.default{
+  color: #fff;
+  background: none;
 }
 
 .typing {
