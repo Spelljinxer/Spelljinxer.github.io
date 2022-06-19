@@ -11,9 +11,6 @@ html{
   background-repeat: repeat;
 }
 
-div {
-  height: 100%; 
-}
 
 .container{
   width: 100%;
@@ -32,13 +29,16 @@ canvas {
 }
 
 /* ------------------ scroll bar ----------------------- */
+
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 6px;
   height: 5px;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(253, 232, 39, 0.979);
+  background: rgb(248, 223, 0);
+  /* background: rgba(172, 151, 250, 0.979); */
   border-radius: 10px;
 }
 
@@ -50,21 +50,20 @@ canvas {
 }
 
 /* ------------------------ Welcome ------------------- */
-.welcome{
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#wrapper {
   text-align: center;
-  
+  margin-top: 10%;
 }
-.welcome h1{
+#welcome{
+  display: inline-block;
+}
+#welcome h1{
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   color: white;
   letter-spacing: 1px;
 }
-.welcome p{
+#welcome p{
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
   color: white;
