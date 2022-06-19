@@ -1,70 +1,113 @@
+var canvas = document.querySelector('canvas'),
+      ctx = canvas.getContext('2d'),
+      colorDot = '#CECECE',
+      color = '#CECECE';
 
 
-//---------------------------------------------------------------------------------
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight
 
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
+
+var canvasDots = function() {
   
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 300;
-  
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
+  canvas.style.display = 'block';
+  ctx.fillStyle = colorDot;
+  ctx.lineWidth = .1;
+  ctx.strokeStyle = color;
+
+  var mousePosition = {
+      x: 30 * canvas.width / 100,
+      y: 30 * canvas.height / 100
+  };
+
+  var dots = {
+      nb: 900,
+      distance: 60,
+      d_radius: 100,
+      array: []
+  };
+
+  function Dot(){
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+
+      this.vx = -.5 + Math.random();
+      this.vy = -.5 + Math.random();
+
+      this.radius = Math.random();
+  }
+
+  Dot.prototype = {
+      create: function(){
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+          ctx.fill();
+      },
+
+      animate: function(){
+          for(i = 0; i < dots.nb; i++){
+
+              var dot = dots.array[i];
+
+              if(dot.y < 0 || dot.y > canvas.height){
+                  dot.vx = dot.vx;
+                  dot.vy = - dot.vy;
+              }
+              else if(dot.x < 0 || dot.x > canvas.width){
+                  dot.vx = - dot.vx;
+                  dot.vy = dot.vy;
+              }
+              dot.x += dot.vx;
+              dot.y += dot.vy;
+          }
+      },
+
+      line: function(){
+
+          // ADDS THE LINE CONNECTIONS
+          // for(i = 0; i < dots.nb; i++){
+          //     for(j = 0; j < dots.nb; j++){
+          //         i_dot = dots.array[i];
+          //         j_dot = dots.array[j];
+
+          //         if((i_dot.x - j_dot.x) < dots.distance && (i_dot.y - j_dot.y) < dots.distance && (i_dot.x - j_dot.x) > - dots.distance && (i_dot.y - j_dot.y) > - dots.distance){
+          //             if((i_dot.x - mousePosition.x) < dots.d_radius && (i_dot.y - mousePosition.y) < dots.d_radius && (i_dot.x - mousePosition.x) > - dots.d_radius && (i_dot.y - mousePosition.y) > - dots.d_radius){
+          //                 ctx.beginPath();
+          //                 ctx.moveTo(i_dot.x, i_dot.y);
+          //                 ctx.lineTo(j_dot.x, j_dot.y);
+          //                 ctx.stroke();
+          //                 ctx.closePath();
+          //             }
+          //         }
+          //     }
+          // }
       }
-    }
+  };
+
+  function createDots(){
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for(i = 0; i < dots.nb; i++){
+          dots.array.push(new Dot());
+          dot = dots.array[i];
+
+          dot.create();
+      }
+
+      dot.line();
+      dot.animate();
   }
 
-window.addEventListener("scroll", reveal);
-
-window.addEventListener("scroll", scrollFunction);
-
-
-const backToTopButton = document.querySelector("#back-to-top-btn");
-function scrollFunction() {
-  if (window.pageYOffset > 950) { 
-    if(!backToTopButton.classList.contains("btnEntrance")) {
-      backToTopButton.classList.remove("btnExit");
-      backToTopButton.classList.add("btnEntrance");
-      backToTopButton.style.display = "block";
-    }
+  window.onmousemove = function(parameter) {
+      mousePosition.x = parameter.pageX;
+      mousePosition.y = parameter.pageY;
   }
-  else {
-    if(backToTopButton.classList.contains("btnEntrance")) {
-      backToTopButton.classList.remove("btnEntrance");
-      backToTopButton.classList.add("btnExit");
-      setTimeout(function() {
-        backToTopButton.style.display = "none";
-      }, 250);
-    }
-  }
-}
 
-backToTopButton.addEventListener("click", smoothScrollBackToTop);
+  mousePosition.x = window.innerWidth;
+  mousePosition.y = window.innerHeight;
 
-function smoothScrollBackToTop() {
-  const targetPosition = 0;
-  const startPosition = window.pageYOffset;
-  const distance = targetPosition - startPosition;
-  const duration = 1;
-  let start = null;
-  
-  window.requestAnimationFrame(step);
+  setInterval(createDots, 1000/30);
+};
 
-  function step(timestamp) {
-    if (!start) start = timestamp;
-    const progress = timestamp - start;
-    window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
-    if (progress < duration) window.requestAnimationFrame(step);
-  }
-}
-
-function easeInOutCubic(t, b, c, d) {
-	t /= d/2;
-	if (t < 1) return c/2*t*t*t + b;
-	t -= 2;
-	return c/2*(t*t*t + 2) + b;
+window.onload = function() {
+  canvasDots();
 };
