@@ -70,14 +70,12 @@ canvas {
   font-size: 0.8em;
   letter-spacing: 1px;
 }
-mark.yellow{
-  color: rgb(248, 223, 0);
-  background: none;
+
+@media screen {
+  
 }
-mark.default{
-  color: #fff;
-  background: none;
-}
+
+
 
 .typing {
   color: #fff;
