@@ -30,10 +30,29 @@ canvas {
   bottom: 0; 
   z-index: -1;
 }
+
+/* ------------------ scroll bar ----------------------- */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(253, 232, 39, 0.979);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-button {
+  height: 5px;
+}
+
 /* ------------------------ Welcome ------------------- */
 .welcome{
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -42,6 +61,12 @@ canvas {
 .welcome h1{
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
+  color: white;
+  letter-spacing: 1px;
+}
+.welcome p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
   color: white;
   letter-spacing: 1px;
 }

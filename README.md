@@ -1,10 +1,10 @@
-# Spelljinxer.github.io - placeholder for Yae Miko site
+# Spelljinxer.github.io - portfolio site
 > this is just a boredom killer
 
 # TODO
-- [ ] F2P Build Section
-- [ ] Premium Build Section
-- [ ] Find out what else to put
-- [ ] Maybe a third build?
-- [ ] Dropdown menu for builds
+- [ ] add a bio section
+- [ ] design portfolio
+- [ ] past codes
+- [ ] navigation
+- [ ] fade-in on scroll
 

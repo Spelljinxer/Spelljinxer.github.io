@@ -65,22 +65,22 @@ var canvasDots = function() {
       line: function(){
 
           // ADDS THE LINE CONNECTIONS
-          // for(i = 0; i < dots.nb; i++){
-          //     for(j = 0; j < dots.nb; j++){
-          //         i_dot = dots.array[i];
-          //         j_dot = dots.array[j];
+          for(i = 0; i < dots.nb; i++){
+              for(j = 0; j < dots.nb; j++){
+                  i_dot = dots.array[i];
+                  j_dot = dots.array[j];
 
-          //         if((i_dot.x - j_dot.x) < dots.distance && (i_dot.y - j_dot.y) < dots.distance && (i_dot.x - j_dot.x) > - dots.distance && (i_dot.y - j_dot.y) > - dots.distance){
-          //             if((i_dot.x - mousePosition.x) < dots.d_radius && (i_dot.y - mousePosition.y) < dots.d_radius && (i_dot.x - mousePosition.x) > - dots.d_radius && (i_dot.y - mousePosition.y) > - dots.d_radius){
-          //                 ctx.beginPath();
-          //                 ctx.moveTo(i_dot.x, i_dot.y);
-          //                 ctx.lineTo(j_dot.x, j_dot.y);
-          //                 ctx.stroke();
-          //                 ctx.closePath();
-          //             }
-          //         }
-          //     }
-          // }
+                  if((i_dot.x - j_dot.x) < dots.distance && (i_dot.y - j_dot.y) < dots.distance && (i_dot.x - j_dot.x) > - dots.distance && (i_dot.y - j_dot.y) > - dots.distance){
+                      if((i_dot.x - mousePosition.x) < dots.d_radius && (i_dot.y - mousePosition.y) < dots.d_radius && (i_dot.x - mousePosition.x) > - dots.d_radius && (i_dot.y - mousePosition.y) > - dots.d_radius){
+                          ctx.beginPath();
+                          ctx.moveTo(i_dot.x, i_dot.y);
+                          ctx.lineTo(j_dot.x, j_dot.y);
+                          ctx.stroke();
+                          ctx.closePath();
+                      }
+                  }
+              }
+          }
       }
   };
 
