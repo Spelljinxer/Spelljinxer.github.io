@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 * {
   box-sizing: border-box; 
 }
@@ -61,11 +61,36 @@ canvas {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   color: white;
-  letter-spacing: 1px;
+  letter-spacing: 20px;
+  font-weight: 500;
 }
 #welcome p{
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
   color: white;
   letter-spacing: 1px;
+}
+
+.typing {
+  color: #fff;
+  width: 30ch;
+  animation: typing 3.5s steps(35), blink 1.0s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5rem;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
