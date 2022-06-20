@@ -6,10 +6,11 @@
 }
 
 html{
-  background-color: #232323;
+  background-color: white;
   overflow-y: scroll;
   background-repeat: repeat;
 }
+
 
 
 .container{
@@ -18,15 +19,16 @@ html{
   overflow-y: scroll;
 }
 canvas {
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0; 
-  z-index: -1;
-  opacity: 0.35;
+  opacity: 1;
+  background: #232323;
 }
 
 /* ------------------ scroll bar ----------------------- */
@@ -34,7 +36,6 @@ canvas {
 ::-webkit-scrollbar {
   width: 6px;
   height: 5px;
-  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -44,7 +45,7 @@ canvas {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.2);
+  background: #232323;
 }
 ::-webkit-scrollbar-button {
   height: 5px;
@@ -52,8 +53,15 @@ canvas {
 
 /* ------------------------ Welcome ------------------- */
 #wrapper {
+  position: absolute;
   text-align: center;
   margin-top: 10%;
+  z-index: 1;
+  margin-left: auto;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 #welcome{
   display: inline-block;
@@ -80,7 +88,7 @@ canvas {
 .typing {
   color: #fff;
   width: 30ch;
-  animation: typing 3.5s steps(35), blink 1.0s step-end infinite alternate;
+  animation: typing 1.5s steps(35), blink 0.75s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -99,4 +107,20 @@ canvas {
   50% {
     border-color: transparent
   }
+}
+
+/* ------------------------------------------------------ */
+
+#body2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #232323;
+  background-image: url("https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
