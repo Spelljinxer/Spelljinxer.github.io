@@ -116,12 +116,13 @@ canvas {
   position: absolute;
   background:rgba(90, 90, 90, 0.856);
   width: 100%;
-  top: 95%;
+  top: 90%;
   height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0.8rem;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .effect-wrapper {
@@ -129,6 +130,8 @@ canvas {
   font-weight: normal;
   color: white; 
 }
+
+
 
 #typed {
   font-weight: bold;
