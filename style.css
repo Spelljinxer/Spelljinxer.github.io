@@ -10,6 +10,7 @@ html{
   overflow-y: scroll;
   overflow-x: hidden;
   background-repeat: repeat;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -154,3 +155,146 @@ canvas {
 	100% { background-color: rgb(248, 223, 0); }
 }
 
+/* --------------------------------------------------------------- */
+
+#about-banner{
+  position: absolute;
+  width: 25%;
+  top: 105%;
+  height: 20%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+#about-banner h1{
+  font-family: 'Montserrat', sans-serif;
+  color :white;
+  position: relative;
+  letter-spacing: 20px;
+}
+
+#about-banner h1::after{
+  content: '';
+  margin-top: 5%;
+  display: block;
+  position: absolute;
+  background: rgb(248, 223, 0);
+  width: 80px;
+  height: 3px;
+  margin-left: -1%;
+  animation: draw-line 2s;
+}
+
+@keyframes draw-line{
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80px;
+  }
+}
+
+/* ------------------------------------------------------------------------ */
+
+#about-main-text{
+  position: absolute;
+  width: 50%;
+  top: 125%;
+  height: 33%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: left;
+  margin-left: 25%;
+  margin-right: 25%;
+  column-gap: 20px;
+}
+
+.column{
+  flex: 50%;
+}
+.text-box-left{
+  background: rgb(248, 223, 0);
+  height: 100%;
+  padding-top: 2.5%;
+  padding-left: 2.5%;
+  color: black;
+  overflow: hidden;
+  padding-right: 2.5%;
+}
+
+.text-box-left h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  letter-spacing: 5px;
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box-left p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: black;
+  letter-spacing: 5px;
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box-right{
+  background: black;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.text-box-right p{
+  font-family: 'Verdana', sans-serif;
+  position: absolute;
+  color: white;
+  z-index: 2;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 60%;
+  font-size: 0.8em;
+}
+
+.text-box-right hr{
+  position: absolute;
+  z-index: 2;
+  top: 85%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 30%;
+}
+
+.pfp-image{
+  width: 25%;
+  position: absolute;
+  margin: auto;
+  top: 15%;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  z-index: 3;
+}
+.background-image{
+  width: 100%;
+  position: relative;
+  opacity: 0.15;
+  z-index: 1;
+}
