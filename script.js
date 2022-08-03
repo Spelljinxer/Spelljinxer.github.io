@@ -145,5 +145,3 @@ function eraseText() {
 window.onload = function() {
 	if (totype[totypeIndex].length) setTimeout(typeText, delayTyping_text);
 }
-
-//test commit
