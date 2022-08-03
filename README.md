@@ -1,4 +1,4 @@
-# Spelljinxer.github.io - portfolio site
+# Spelljinxer.github.io - Personal Site
 > this is just a boredom killer
 
 #

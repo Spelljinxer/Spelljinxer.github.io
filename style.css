@@ -134,6 +134,7 @@ canvas {
   height: 5%;
   z-index: 3;
   color: rgba(255, 255, 255, 0.25);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .jap-text{
@@ -155,6 +156,7 @@ canvas {
   z-index: 1;
   display: flex;
   margin-top: 3%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .col-md-6{
