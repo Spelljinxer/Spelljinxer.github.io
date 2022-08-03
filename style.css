@@ -176,7 +176,53 @@ canvas {
   margin-top: 5%;
   color: rgb(248, 223, 0);
   margin-left: 25%;
+  -webkit-animation: fadeIn-left 0.76s ease-in-out;
+  -moz-animation: fadeIn-left 0.76s ease-in-out;
+  -o-animation: fadeIn-left 0.76s ease-in-out;
+  animation: fadeIn-left 0.76s ease-in-out;
 }
+
+@-webkit-keyframes fadeIn-left{
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transofmr: translateX(0);
+  }
+}
+@-o-keyframes fadeIn-left{
+  0%{
+    opacity: 0;
+    -o-transform: translateX(-100px);
+  }
+  100%{
+    opacity: 1;
+    -o-transofmr: translateX(0);
+  }
+}
+@-moz-keyframes fadeIn-left{
+  0%{
+    opacity: 0;
+    -moz-transform: translateX(-100px);
+  }
+  100%{
+    opacity: 1;
+    -moz-transofmr: translateX(0);
+  }
+}
+@keyframes fadeIn-left{
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100%{
+    opacity: 1;
+    transofmr: translateX(0);
+  }
+}
+
 
 .pfp-image{
   width: 30%;
@@ -194,10 +240,52 @@ canvas {
 
 .right-items{
   text-align: left;
-  
+  -webkit-animation: fadeIn-right 0.76s ease-in-out;
+  -moz-animation: fadeIn-right 0.76s ease-in-out;
+  -o-animation: fadeIn-right 0.76s ease-in-out;
+  animation: fadeIn-right 0.76s ease-in-out;
 }
-/* 
-place the right-title to the top left of the div */
+
+@-webkit-keyframes fadeIn-right{
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transofmr: translateX(0);
+  }
+}
+@-o-keyframes fadeIn-right{
+  0%{
+    opacity: 0;
+    -o-transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    -o-transofmr: translateX(0);
+  }
+}
+@-moz-keyframes fadeIn-right{
+  0%{
+    opacity: 0;
+    -moz-transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    -moz-transofmr: translateX(0);
+  }
+}
+@keyframes fadeIn-right{
+  0%{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    transofmr: translateX(0);
+  }
+}
 
 .right-title{
   display: inline-block;
