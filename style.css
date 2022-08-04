@@ -320,7 +320,10 @@ canvas {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   margin-top: 3%;
-  
+  -webkit-animation: fadeIn-right 1.35s ease-in-out;
+  -moz-animation: fadeIn-right 1.35s ease-in-out;
+  -o-animation: fadeIn-right 1.35s ease-in-out;
+  animation: fadeIn-right 1.35s ease-in-out;
 }
 
 .fa-solid{
