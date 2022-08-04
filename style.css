@@ -235,10 +235,15 @@ canvas {
   border: 2px solid rgb(248, 223, 0);
 }
 
-.left-items p{
+.signature p{
   font-size: 1rem;
   color: white;
   font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-animation: fadeIn-left 1.36s ease-in-out;
+  -moz-animation: fadeIn-left 1.36s ease-in-out;
+  -o-animation: fadeIn-left 1.36s ease-in-out;
+  animation: fadeIn-left 1.36s ease-in-out;
 }
 
 /* ------------------- right items---------------------------------- */
@@ -249,7 +254,6 @@ canvas {
   -moz-animation: fadeIn-right 0.76s ease-in-out;
   -o-animation: fadeIn-right 0.76s ease-in-out;
   animation: fadeIn-right 0.76s ease-in-out;
-  
 }
 
 .col-md-6.right{
