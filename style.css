@@ -249,6 +249,11 @@ canvas {
   -moz-animation: fadeIn-right 0.76s ease-in-out;
   -o-animation: fadeIn-right 0.76s ease-in-out;
   animation: fadeIn-right 0.76s ease-in-out;
+  
+}
+
+.col-md-6.right{
+  /* background-color: black; */
 }
 
 @-webkit-keyframes fadeIn-right{
@@ -303,10 +308,24 @@ canvas {
 .right-title h1{
   margin: 0;
   padding: 0;
-  margin-left: 15%;
+  margin-left: 4.5%;
 }
 
+.right-title p{
+  margin: 0;
+  padding: 0;
+  margin-left: 4%;
+  color: rgb(230, 230, 230);
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  margin-top: 3%;
+  
+}
 
+.fa-solid{
+  font-size: 1rem;
+}
 
 /* ------------------------------------------------------ */
 
@@ -329,7 +348,6 @@ canvas {
   font-weight: normal;
   color: white; 
 }
-
 
 
 #typed {
