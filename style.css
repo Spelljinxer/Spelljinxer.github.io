@@ -467,6 +467,10 @@ canvas {
   -moz-animation: fadeIn-right 1.35s ease-in-out;
   -o-animation: fadeIn-right 1.35s ease-in-out;
   animation: fadeIn-right 1.35s ease-in-out;
+  
+}
+a{
+  text-decoration: none;
 }
 
 
