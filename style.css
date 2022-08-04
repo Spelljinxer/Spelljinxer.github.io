@@ -445,6 +445,7 @@ canvas {
   margin-left: 6.5%;
   margin-top: 3%;
   font-family: 'Montserrat', sans-serif;
+  max-width: 51%;
 }
 .github p>span{
   font-size: 0.9rem;
