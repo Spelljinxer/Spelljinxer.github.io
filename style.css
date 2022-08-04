@@ -62,7 +62,7 @@ canvas {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(248, 223, 0);
+  background: rgb(248, 240, 131);
   /* background: rgba(172, 151, 250, 0.979); */
   border-radius: 10px;
 }
@@ -142,7 +142,7 @@ canvas {
 }
 
 .jap-text{
-  color: rgb(248, 223, 0);
+  color: rgb(248, 240, 131);
   opacity: 0.9; 
   font-weight: 500;
   letter-spacing: 5px;
@@ -179,7 +179,7 @@ canvas {
   display: inline-block;
   vertical-align: middle;
   margin-top: 5%;
-  color: rgb(248, 223, 0);
+  color: rgb(248, 240, 131);
   margin-left: 35%;
   -webkit-animation: fadeIn-left 0.76s ease-in-out;
   -moz-animation: fadeIn-left 0.76s ease-in-out;
@@ -232,7 +232,7 @@ canvas {
 .pfp-image{
   width: 30%;
   border-radius: 50%;
-  border: 2px solid rgb(248, 223, 0);
+  border: 2px solid rgb(248, 240, 131);
 }
 
 .signature p{
@@ -307,7 +307,7 @@ canvas {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5%;
-  color: rgb(248, 223, 0);
+  color: rgb(248, 240, 131);
   letter-spacing: 5px;
 }
 
@@ -401,7 +401,7 @@ canvas {
   font-family: FontAwesome;
   content: "\f121";
   margin-right: 4px;  
-  color:rgb(248, 223, 0);
+  color:rgb(248, 240, 131);
   -webkit-animation: fadeIn-right 1.35s ease-in-out;
   -moz-animation: fadeIn-right 1.35s ease-in-out;
   -o-animation: fadeIn-right 1.35s ease-in-out;
@@ -432,7 +432,7 @@ canvas {
   font-family: FontAwesome;
   content: "\f392";
   margin-right: 4px;  
-  color:rgb(248, 223, 0);
+  color:rgb(248, 240, 131);
   -webkit-animation: fadeIn-right 1.35s ease-in-out;
   -moz-animation: fadeIn-right 1.35s ease-in-out;
   -o-animation: fadeIn-right 1.35s ease-in-out;
@@ -462,7 +462,7 @@ canvas {
   font-family: FontAwesome;
   content: "\f09b";
   margin-right: 4px;  
-  color:rgb(248, 223, 0);
+  color:rgb(248, 240, 131);
   -webkit-animation: fadeIn-right 1.35s ease-in-out;
   -moz-animation: fadeIn-right 1.35s ease-in-out;
   -o-animation: fadeIn-right 1.35s ease-in-out;
@@ -500,7 +500,7 @@ a{
 
 #typed {
   font-weight: bold;
-  color: rgb(248, 223, 0);
+  color: rgb(248, 240, 131);
 }
 
 .cursor {
@@ -514,9 +514,9 @@ a{
 }
 
 @keyframes blinker {
-	0% { background-color: rgb(248, 223, 0); }
+	0% { background-color: rgb(248, 240, 131); }
 	50% { background-color: transparent; }
-	100% { background-color: rgb(248, 223, 0); }
+	100% { background-color: rgb(248, 240, 131); }
 }
 
 
