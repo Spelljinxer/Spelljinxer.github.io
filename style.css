@@ -187,6 +187,11 @@ canvas {
   animation: fadeIn-left 0.76s ease-in-out;
 }
 
+.left-items h1{
+  letter-spacing: 3.5px;
+  font-size: 2.1rem;
+}
+
 @-webkit-keyframes fadeIn-left{
   0%{
     opacity: 0;
