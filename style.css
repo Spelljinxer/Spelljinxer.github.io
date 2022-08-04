@@ -254,6 +254,7 @@ canvas {
   -moz-animation: fadeIn-right 0.76s ease-in-out;
   -o-animation: fadeIn-right 0.76s ease-in-out;
   animation: fadeIn-right 0.76s ease-in-out;
+
 }
 
 .col-md-6.right{
@@ -341,7 +342,7 @@ canvas {
 
 .languages{
   margin-left: 6.25%;
-  margin-top: 3%;
+  margin-top: 4%;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -350,10 +351,10 @@ canvas {
   color: rgb(230, 230, 230);
   letter-spacing: 1px;
   margin-left: 1%;
-  -webkit-animation: fadeIn-right-lang 2.5s ease-in-out;
-  -moz-animation: fadeIn-right-lang 2.5s ease-in-out;
-  -o-animation: fadeIn-right-lang 2.5s ease-in-out;
-  animation: fadeIn-right-lang 2.5s ease-in-out;
+  -webkit-animation: fadeIn-right-lang 1.65s ease-in-out;
+  -moz-animation: fadeIn-right-lang 1.65s ease-in-out;
+  -o-animation: fadeIn-right-lang 1.65s ease-in-out;
+  animation: fadeIn-right-lang 1.65s ease-in-out;
 }
 
 @-webkit-keyframes fadeIn-right-lang{
@@ -451,7 +452,7 @@ canvas {
   font-size: 0.9rem;
   color: rgb(230, 230, 230);
   letter-spacing: 1px;
-  margin-left: 1.45%;
+  margin-left: 2.5%;
   display: inline-block;
   -webkit-animation: fadeIn-right 1.65s ease-in-out;
   -moz-animation: fadeIn-right 1.65s ease-in-out;
