@@ -541,7 +541,6 @@ a{
 
 
 .bottom-shapes{
-  /* background-color: blue; */
   width: 2.5%;
   height: 10%;
   position: fixed;
@@ -576,7 +575,6 @@ a{
   height: 10px;
   transform:rotate(45deg);
 	width: 10px;
-  border: 1px solid white;
   background: white;
   margin-top: 125%;
 }
