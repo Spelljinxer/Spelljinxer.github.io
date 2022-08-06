@@ -536,6 +536,41 @@ a{
   display: inline-block;
   margin-left: 0.65%;
 }
+.square7{
+  height: 20px;
+  width: 20px;
+  background-color: #ffcd74;
+  display: inline-block;
+  margin-left: 0.65%;
+}
+.square8{
+  height: 20px;
+  width: 20px;
+  background-color: #ffa884;
+  display: inline-block;
+  margin-left: 0.65%;
+}
+.square9{
+  height: 20px;
+  width: 20px;
+  background-color: #ff89a8;
+  display: inline-block;
+  margin-left: 0.65%;
+}
+.square10{
+  height: 20px;
+  width: 20px;
+  background-color: #ff7cd4;
+  display: inline-block;
+  margin-left: 0.65%;
+}
+.square11{
+  height: 20px;
+  width: 20px;
+  background-color: #ba83f8;
+  display: inline-block;
+  margin-left: 0.65%;
+}
 
 /* -------------------------bottom shapes----------------------------- */
 
