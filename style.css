@@ -159,7 +159,7 @@ canvas {
   width: 75%;
   position: fixed;
   top: 35%;
-  height: 35%;
+  height: 37%;
   margin-left: 12.5%;
   z-index: 1;
   display: flex;
@@ -173,9 +173,9 @@ canvas {
   text-align: center;
 }
 
-.border-right {
+/* .border-right {
   border-right: 1px solid rgb(230, 230, 230);
-}
+} */
 
 /* ------------------- left items---------------------------------- */
 .left-items{
@@ -262,6 +262,11 @@ canvas {
   -moz-animation: fadeIn-right 0.76s ease-in-out;
   -o-animation: fadeIn-right 0.76s ease-in-out;
   animation: fadeIn-right 0.76s ease-in-out;
+  border-left: 1px solid rgb(230, 230, 230);
+  /* background: red; */
+  margin: 0;
+  padding: 0;
+  position: relative;
 
 }
 
@@ -344,13 +349,43 @@ canvas {
 .fa-caret-right{
   font-size: 1rem;
 }
+/* ---------------------------tools-------------------------- */
+
+.tools{
+  margin-left: 6.25%;
+  margin-top: 3%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tools p>span{
+  font-size: 0.9rem;
+  color: rgb(230, 230, 230);
+  letter-spacing: 1px;
+  margin-left: 1.65%;
+  display: inline-block;
+  -webkit-animation: fadeIn-right 1.65s ease-in-out;
+  -moz-animation: fadeIn-right 1.65s ease-in-out;
+  -o-animation: fadeIn-right 1.65s ease-in-out;
+  animation: fadeIn-right 1.65s ease-in-out;
+}
+
+.tools p:before{
+  font-family: FontAwesome;
+  content: "\f7d9";
+  margin-right: 4px;  
+  color:rgb(248, 240, 131);
+  -webkit-animation: fadeIn-right 1.35s ease-in-out;
+  -moz-animation: fadeIn-right 1.35s ease-in-out;
+  -o-animation: fadeIn-right 1.35s ease-in-out;
+  animation: fadeIn-right 1.35s ease-in-out;
+}
 
 /* ---------------------------languages-------------------------- */
 
 
 .languages{
   margin-left: 6.25%;
-  margin-top: 4%;
+  margin-top: 2%;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -359,54 +394,14 @@ canvas {
   color: rgb(230, 230, 230);
   letter-spacing: 1px;
   margin-left: 1%;
-  -webkit-animation: fadeIn-right-lang 1.65s ease-in-out;
-  -moz-animation: fadeIn-right-lang 1.65s ease-in-out;
-  -o-animation: fadeIn-right-lang 1.65s ease-in-out;
-  animation: fadeIn-right-lang 1.65s ease-in-out;
+  display: inline-block;
+  -webkit-animation: fadeIn-right 1.65s ease-in-out;
+  -moz-animation: fadeIn-right 1.65s ease-in-out;
+  -o-animation: fadeIn-right 1.65s ease-in-out;
+  animation: fadeIn-right 1.65s ease-in-out;
 }
 
-@-webkit-keyframes fadeIn-right-lang{
-  0%{
-    opacity: 0;
-    -webkit-transform: translateX(75px);
-  }
-  100%{
-    opacity: 1;
-    -webkit-transofmr: translateX(0);
-  }
-}
-@-o-keyframes fadeIn-right{
-  0%{
-    opacity: 0;
-    -webkit-transform: translateX(75px);
-  }
-  100%{
-    opacity: 1;
-    -webkit-transofmr: translateX(0);
-  }
-}
-@-moz-keyframes fadeIn-right{
-  0%{
-    opacity: 0;
-    -webkit-transform: translateX(75px);
-  }
-  100%{
-    opacity: 1;
-    -webkit-transofmr: translateX(0);
-  }
-}
-@keyframes fadeIn-right{
-  0%{
-    opacity: 0;
-    -webkit-transform: translateX(75px);
-  }
-  100%{
-    opacity: 1;
-    -webkit-transofmr: translateX(0);
-  }
-}
-
-.languages p:before {
+.languages p:before{
   font-family: FontAwesome;
   content: "\f121";
   margin-right: 4px;  
@@ -417,11 +412,47 @@ canvas {
   animation: fadeIn-right 1.35s ease-in-out;
 }
 
+
+/* ---------------------------github------------------------ */
+
+.github{
+  margin-left: 6.5%;
+  margin-top: 2%;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 51%;
+}
+.github p>span{
+  font-size: 0.9rem;
+  color: rgb(230, 230, 230);
+  letter-spacing: 1px;
+  margin-left: 2.75%;
+  display: inline-block;
+  -webkit-animation: fadeIn-right 1.65s ease-in-out;
+  -moz-animation: fadeIn-right 1.65s ease-in-out;
+  -o-animation: fadeIn-right 1.65s ease-in-out;
+  animation: fadeIn-right 1.65s ease-in-out;
+}
+
+.github p:before{
+  font-family: FontAwesome;
+  content: "\f09b";
+  margin-right: 4px;  
+  color:rgb(248, 240, 131);
+  -webkit-animation: fadeIn-right 1.35s ease-in-out;
+  -moz-animation: fadeIn-right 1.35s ease-in-out;
+  -o-animation: fadeIn-right 1.35s ease-in-out;
+  animation: fadeIn-right 1.35s ease-in-out;
+  
+}
+a{
+  text-decoration: none;
+}
+
 /* ---------------------------discord-------------------------- */
 
 .discord{
   margin-left: 6.25%;
-  margin-top: 3%;
+  margin-top: 2%;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -448,51 +479,18 @@ canvas {
   animation: fadeIn-right 1.35s ease-in-out;
 }
 
-/* ---------------------------anilist------------------------- */
-
-.github{
-  margin-left: 6.5%;
-  margin-top: 3%;
-  font-family: 'Montserrat', sans-serif;
-  max-width: 51%;
-}
-.github p>span{
-  font-size: 0.9rem;
-  color: rgb(230, 230, 230);
-  letter-spacing: 1px;
-  margin-left: 2.5%;
-  display: inline-block;
-  -webkit-animation: fadeIn-right 1.65s ease-in-out;
-  -moz-animation: fadeIn-right 1.65s ease-in-out;
-  -o-animation: fadeIn-right 1.65s ease-in-out;
-  animation: fadeIn-right 1.65s ease-in-out;
-}
-
-.github p:before{
-  font-family: FontAwesome;
-  content: "\f09b";
-  margin-right: 4px;  
-  color:rgb(248, 240, 131);
-  -webkit-animation: fadeIn-right 1.35s ease-in-out;
-  -moz-animation: fadeIn-right 1.35s ease-in-out;
-  -o-animation: fadeIn-right 1.35s ease-in-out;
-  animation: fadeIn-right 1.35s ease-in-out;
-  
-}
-a{
-  text-decoration: none;
-}
 
 /* ---------------------------shapes------------------------- */
 
 .shapes{
   margin-left: 6.5%;
-  margin-top: 3%;
   font-family: 'Montserrat', sans-serif;
   -webkit-animation: fadeIn-right 1.35s ease-in-out;
   -moz-animation: fadeIn-right 1.35s ease-in-out;
   -o-animation: fadeIn-right 1.35s ease-in-out;
   animation: fadeIn-right 1.35s ease-in-out;
+  bottom: 0;
+  margin-bottom: 0;
 }
 
 .square{
@@ -520,21 +518,21 @@ a{
   width: 20px;
   background-color: #f3ecac;
   display: inline-block;
-  margin-left: 0.65%;
+  margin-left: 0.55%;
 }
 .square5{
   height: 20px;
   width: 20px;
   background-color: #f6ee98;
   display: inline-block;
-  margin-left: 0.65%;
+  margin-left: 0.55%;
 }
 .square6{
   height: 20px;
   width: 20px;
   background-color: #f8f083;
   display: inline-block;
-  margin-left: 0.65%;
+  margin-left: 0.55%;
 }
 .square7{
   height: 20px;
@@ -548,7 +546,7 @@ a{
   width: 20px;
   background-color: #ffa884;
   display: inline-block;
-  margin-left: 0.65%;
+  margin-left: 0.55%;
 }
 .square9{
   height: 20px;
@@ -569,7 +567,7 @@ a{
   width: 20px;
   background-color: #ba83f8;
   display: inline-block;
-  margin-left: 0.65%;
+  margin-left: 0.58%;
 }
 
 /* -------------------------bottom shapes----------------------------- */
