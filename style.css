@@ -155,6 +155,7 @@ canvas {
   z-index: 3;
   color: rgba(255, 255, 255, 0.25);
   font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
 }
 
 .jap-text{
@@ -168,7 +169,7 @@ canvas {
 @media screen and (max-width: 830px){
   .watermark{
     /* font-size: 0.2rem; */
-    white-space: nowrap;
+    /* white-space: nowrap; */
     margin-left: 2.5%;
   }
 }
@@ -194,9 +195,16 @@ canvas {
   text-align: center;
 }
 
-/* .border-right {
-  border-right: 1px solid rgb(230, 230, 230);
-} */
+@media screen and (max-width: 830px){
+  .main-body{
+    top: 23%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .col-md-6{
+    flex: 100%;
+  }
+}
 
 /* ------------------- left items---------------------------------- */
 .left-items{
