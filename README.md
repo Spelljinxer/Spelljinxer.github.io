@@ -1,5 +1,5 @@
 # Spelljinxer.github.io - Personal Site
-> this is just a boredom killer
+> Working on a portfolio site (sort of)
 
 #
 
