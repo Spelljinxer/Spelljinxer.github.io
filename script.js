@@ -1,3 +1,7 @@
+/*
+ * @Author Reiden Rufin (Spelljinxer)
+ ? Current Release: 1.5
+ */
 
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d');
