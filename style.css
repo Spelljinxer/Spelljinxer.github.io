@@ -197,7 +197,7 @@ canvas {
 
 @media screen and (max-width: 830px){
   .main-body{
-    top: 23%;
+    top: 20%;
     flex-direction: column;
     margin: 0 auto;
   }
@@ -270,6 +270,12 @@ canvas {
   width: 30%;
   border-radius: 50%;
   border: 2px solid rgb(248, 240, 131);
+}
+
+@media screen and (max-width: 830px){
+  .pfp-image{
+    width: 50%;
+  }
 }
 
 .signature p{
