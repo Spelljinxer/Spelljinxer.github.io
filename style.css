@@ -1,5 +1,5 @@
 /* 
-  *Author Reiden Rufin (Spelljinxer)
+  *Author Spelljinxer (Reiden Rufin)
   ? Current Release: 1.5.0
  */
 
@@ -54,6 +54,7 @@ canvas {
   }
   html, body{
     overflow-y: scroll;
+    height: 100%;
   }
   canvas{
     display :none;
@@ -634,6 +635,12 @@ a{
   position: fixed;
   right: 0;
   bottom: 11%;
+}
+
+@media screen and (max-width: 830px) {
+  .bottom-shapes{
+    display: none;
+  }
 }
 
 .items{
