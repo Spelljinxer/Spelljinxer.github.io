@@ -304,9 +304,14 @@ canvas {
   position: relative;
 
 }
-
-.col-md-6.right{
-  /* background-color: black; */
+@media screen and (max-width: 830px){
+  .right-items{
+    border-left: none;
+    border-top: 1px solid rgb(230, 230, 230);
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 100%;
+  }
 }
 
 @-webkit-keyframes fadeIn-right{
@@ -380,6 +385,8 @@ canvas {
   -o-animation: fadeIn-right 1.35s ease-in-out;
   animation: fadeIn-right 1.35s ease-in-out;
 }
+
+
 
 .fa-caret-right{
   font-size: 1rem;
@@ -662,6 +669,7 @@ a{
   font-size: 0.8rem;
   font-family: 'JetBrains Mono', monospace;
   box-shadow: 0px -1px 18px 1px rgba(0, 0, 0, 0.87);
+  z-index: 1;
   
 }
 
