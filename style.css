@@ -11,7 +11,8 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&display=swap');
 
 :root{
-  --primary-color: #232323;
+  --primary-bg-color: #232323;
+  --main-color: rgb(248, 240, 131);
 }
 
 * {
@@ -19,7 +20,7 @@
 }
 
 html{
-  background-color: var(--primary-color);
+  background-color: var(--primary-bg-color);
   overflow-y: hidden;
   overflow-x: hidden;
   background-repeat: repeat;
@@ -45,12 +46,12 @@ canvas {
   left: 0;
   bottom: 0; 
   opacity: 1;
-  background: #232323;
+  background: var(--primary-bg-color);
 }
 
 @media screen and (max-width: 830px) {
   body{
-    background-color: var(--primary-color);
+    background-color: var(--primary-bg-color);
   }
   html, body{
     overflow-y: scroll;
@@ -71,13 +72,13 @@ canvas {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(248, 240, 131);
+  background: var(--main-color);
   /* background: rgba(172, 151, 250, 0.979); */
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #232323;
+  background: var(--primary-bg-color);
 }
 ::-webkit-scrollbar-button {
   height: 5px;
@@ -168,7 +169,7 @@ canvas {
 }
 
 .jap-text{
-  color: rgb(248, 240, 131);
+  color: var(--main-color);
   opacity: 0.9; 
   font-weight: 500;
   letter-spacing: 5px;
@@ -220,7 +221,7 @@ canvas {
   display: inline-block;
   vertical-align: middle;
   margin-top: 5%;
-  color: rgb(248, 240, 131);
+  color: var(--main-color);
   margin-left: 35%;
   -webkit-animation: fadeIn-left 0.76s ease-in-out;
   -moz-animation: fadeIn-left 0.76s ease-in-out;
@@ -278,7 +279,7 @@ canvas {
 .pfp-image{
   width: 30%;
   border-radius: 50%;
-  border: 2px solid rgb(248, 240, 131);
+  border: 2px solid var(--main-color);
 }
 
 @media screen and (max-width: 830px){
@@ -370,7 +371,7 @@ canvas {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5%;
-  color: rgb(248, 240, 131);
+  color: var(--main-color);
   letter-spacing: 5px;
 }
 
@@ -429,7 +430,7 @@ canvas {
   font-family: FontAwesome;
   content: "\f7d9";
   margin-right: 4px;  
-  color:rgb(248, 240, 131);
+  color:var(--main-color);
   -webkit-animation: fadeIn-right 1.35s ease-in-out;
   -moz-animation: fadeIn-right 1.35s ease-in-out;
   -o-animation: fadeIn-right 1.35s ease-in-out;
@@ -461,7 +462,7 @@ canvas {
   font-family: FontAwesome;
   content: "\f121";
   margin-right: 4px;  
-  color:rgb(248, 240, 131);
+  color:var(--main-color);
   -webkit-animation: fadeIn-right 1.35s ease-in-out;
   -moz-animation: fadeIn-right 1.35s ease-in-out;
   -o-animation: fadeIn-right 1.35s ease-in-out;
@@ -493,7 +494,7 @@ canvas {
   font-family: FontAwesome;
   content: "\f09b";
   margin-right: 4px;  
-  color:rgb(248, 240, 131);
+  color:var(--main-color);
   -webkit-animation: fadeIn-right 1.35s ease-in-out;
   -moz-animation: fadeIn-right 1.35s ease-in-out;
   -o-animation: fadeIn-right 1.35s ease-in-out;
@@ -528,7 +529,7 @@ a{
   font-family: FontAwesome;
   content: "\f392";
   margin-right: 4px;  
-  color:rgb(248, 240, 131);
+  color:var(--main-color);
   -webkit-animation: fadeIn-right 1.35s ease-in-out;
   -moz-animation: fadeIn-right 1.35s ease-in-out;
   -o-animation: fadeIn-right 1.35s ease-in-out;
@@ -702,7 +703,7 @@ a{
 
 #typed {
   font-weight: bold;
-  color: rgb(248, 240, 131);
+  color: var(--main-color);
 }
 
 .cursor {
@@ -716,9 +717,9 @@ a{
 }
 
 @keyframes blinker {
-	0% { background-color: rgb(248, 240, 131); }
+	0% { background-color: var(--main-color); }
 	50% { background-color: transparent; }
-	100% { background-color: rgb(248, 240, 131); }
+	100% { background-color: var(--main-color); }
 }
 
 
