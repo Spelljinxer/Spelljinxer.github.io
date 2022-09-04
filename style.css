@@ -684,7 +684,7 @@ a{
   position: fixed;
   background:rgba(90, 90, 90, 0.95);
   width: 100%;
-  /* top: 90%; */
+  
   height: 10%;
   display: flex;
   justify-content: center;
@@ -695,6 +695,12 @@ a{
   z-index: 1;
   bottom: 0;
   
+}
+
+@media screen and (max-width: 830px){
+  #banner{
+    background:rgba(90, 90, 90,1);
+  }
 }
 
 .effect-wrapper {
