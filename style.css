@@ -25,10 +25,12 @@ html{
   overflow-x: hidden;
   background-repeat: repeat;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body{
   margin: 0;
+  height: 100%;
 }
 
 .container{
@@ -58,7 +60,7 @@ canvas {
     height: 100%;
   }
   canvas{
-    display :none;
+    display: none;
     opacity: 0;
   }
 }
@@ -189,7 +191,7 @@ canvas {
 .main-body{
   /* background: rgba(90, 90, 90, 1); */
   width: 75%;
-  position: fixed;
+  position: absolute;
   top: 35%;
   height: 37%;
   margin-left: 12.5%;
@@ -679,10 +681,10 @@ a{
 /* -------------------------footer----------------------------- */
 
 #banner{
-  position: absolute;
+  position: fixed;
   background:rgba(90, 90, 90, 0.95);
   width: 100%;
-  top: 90%;
+  /* top: 90%; */
   height: 10%;
   display: flex;
   justify-content: center;
@@ -691,6 +693,7 @@ a{
   font-family: 'JetBrains Mono', monospace;
   box-shadow: 0px -1px 18px 1px rgba(0, 0, 0, 0.87);
   z-index: 1;
+  bottom: 0;
   
 }
 
