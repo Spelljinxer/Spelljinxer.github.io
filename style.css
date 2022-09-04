@@ -5,12 +5,16 @@
 @import url(//fonts.googleapis.com/earlyaccess/nikukyu.css);
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&display=swap');
 
+:root{
+  --primary-color: #232323;
+}
+
 * {
   box-sizing: border-box; 
 }
 
 html{
-  background-color: white;
+  background-color: var(--primary-color);
   overflow-y: hidden;
   overflow-x: hidden;
   background-repeat: repeat;
@@ -39,17 +43,13 @@ canvas {
   background: #232323;
 }
 
-@media screen and (max-width: 768px) {
-  canvas {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0; 
-    opacity: 0.1;
-    background: #232323;
+@media screen and (max-width: 830px) {
+  body{
+    background-color: var(--primary-color);
+  }
+  canvas{
+    display :none;
+    opacity: 0;
   }
 }
   
@@ -104,6 +104,19 @@ canvas {
   justify-content: center;
 }
 
+@media screen and (max-width: 830px) {
+  #wrapper{
+    /* background-color: red; */
+    top: 7%;
+    
+  }
+  #welcome h1{
+    margin: 0;
+    margin-bottom: 2%;
+    /* background-color: red; */
+    font-size: 2rem;
+  }
+}
 
 .typing {
   color: #fff;
@@ -150,6 +163,14 @@ canvas {
   font-weight: 500;
   letter-spacing: 5px;
   font-family: 'Nico Moji', cursive;
+}
+
+@media screen and (max-width: 830px){
+  .watermark{
+    /* font-size: 0.2rem; */
+    white-space: nowrap;
+    margin-left: 2.5%;
+  }
 }
 
 /* ----------------------main div-------------------------------- */
