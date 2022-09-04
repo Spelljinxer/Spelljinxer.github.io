@@ -1,6 +1,6 @@
 /*
  * @Author Spelljinxer (Reiden Rufin)
- ? Current Release: 1.5.2
+ ? Current Release: 1.5.4
  */
 
 var canvas = document.getElementById("canvas"),
