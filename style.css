@@ -538,6 +538,18 @@ a{
   animation: fadeIn-right 1.35s ease-in-out;
 }
 
+@media screen and (max-width: 830px){
+  .tools, .languages, .github, .discord{
+    white-space: nowrap;
+  }
+  .tools p>span{
+    white-space: pre-wrap;
+  }
+  .languages p>span{
+    white-space: pre-wrap;
+  }
+  
+}
 
 /* ---------------------------shapes------------------------- */
 
