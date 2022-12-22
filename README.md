@@ -1,5 +1,5 @@
 # Spelljinxer.github.io - Personal Site
-> Working on a portfolio site (sort of)
+> Working on a portfolio site
 
 #
 
