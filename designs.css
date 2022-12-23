@@ -126,21 +126,24 @@
   .diamond{
     height: 10px;
     transform:rotate(45deg);
-      width: 10px;
+    width: 10px;
     border: 1px solid white;
+    /* background: white; */
   }
   .diamond2{
     height: 10px;
     transform:rotate(45deg);
-      width: 10px;
-    border: 1px solid white;
+    width: 10px;
+    background: white;
+    /* border: 1px solid white; */
     margin-top: 125%;
   }
   .diamond3{
     height: 10px;
     transform:rotate(45deg);
-      width: 10px;
-    background: white;
+    width: 10px;
+    /* background: white; */
+    border: 1px solid white;
     margin-top: 125%;
   }
 

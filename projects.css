@@ -96,7 +96,55 @@
   }
 
 
+/* -------------------------bottom shapes----------------------------- */
 
+
+.bottom-shapes{
+    width: 2.5%;
+    height: 10%;
+    position: fixed;
+    right: 0;
+    bottom: 11%;
+  }
+  
+  @media screen and (max-width: 830px) {
+    .bottom-shapes{
+      display: none;
+    }
+  }
+  
+  .items{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+  
+  .diamond{
+    height: 10px;
+    transform:rotate(45deg);
+    width: 10px;
+    /* border: 1px solid white; */
+    background: white;
+  }
+  .diamond2{
+    height: 10px;
+    transform:rotate(45deg);
+    width: 10px;
+    border: 1px solid white;
+    margin-top: 125%;
+  }
+  .diamond3{
+    height: 10px;
+    transform:rotate(45deg);
+    width: 10px;
+    /* background: white; */
+    border: 1px solid white;
+    margin-top: 125%;
+  }
 
 
 
