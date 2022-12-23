@@ -312,6 +312,40 @@ canvas {
   animation: fadeIn-left 1.36s ease-in-out;
 }
 
+.links p{
+  font-size: 1rem;
+  color: white;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-animation: fadeIn-left 1.36s ease-in-out;
+  -moz-animation: fadeIn-left 1.36s ease-in-out;
+  -o-animation: fadeIn-left 1.36s ease-in-out;
+  animation: fadeIn-left 1.36s ease-in-out;;
+}
+
+.links span{
+  color: white;
+}
+
+.links i{
+  color: var(--main-color);
+  font-size: .75rem;
+}
+
+.links a{
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 830px){
+  .links{
+    display: flex;
+    flex-direction: column;
+  }
+  .links p{
+    margin-bottom: 5%;
+  }
+}
+
 /* ------------------- right items---------------------------------- */
 
 .right-items{
