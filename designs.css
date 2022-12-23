@@ -147,7 +147,52 @@
     margin-top: 125%;
   }
 
-
+  .items a:hover .diamond{
+    -webkit-animation: diamond 3s;
+    -moz-animation: diamond 3s;
+    -o-animation: diamond 3s;
+    animation: diamond 3s;
+  }
+  
+  .items a:hover .diamond3{
+    -webkit-animation: diamond 3s;
+    -moz-animation: diamond 3s;
+    -o-animation: diamond 3s;
+    animation: diamond 3s;
+  }
+  
+  @-webkit-keyframes diamond {
+    0% {
+      background: white;
+    }
+    100% {
+      background: #ff7cd4;
+    }
+  }
+  @-moz-keyframes diamond {
+    0% {
+      background: white;
+    }
+    100% {
+      background: #ff7cd4;
+    }
+  }
+  @-o-keyframes diamond {
+    0% {
+      background: white;
+    }
+    100% {
+      background: #ff7cd4;
+    }
+  }
+  @keyframes diamond {
+    0% {
+      background: white;
+    }
+    100% {
+      background: #ff7cd4;
+    }
+  }
 
 
 /* -------------------------footer----------------------------- */
