@@ -325,11 +325,14 @@ canvas {
 
 .links span{
   color: white;
+  margin-left: 3px;
+  font-size: .85rem;
 }
 
 .links i{
   color: var(--main-color);
-  font-size: .75rem;
+  font-size: .65rem;
+  margin-left: 5px;
 }
 
 .links a{
