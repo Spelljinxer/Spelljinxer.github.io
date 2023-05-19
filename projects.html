@@ -1,14 +1,15 @@
 <!-- 
   * Author Spelljinxer (Reiden Rufin)
-  * Page to hold past projects
+  * Main Page
   ? Current Release: 1.5.5
 -->
+
 
 <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Spelljinxer - Projects</title>
+  <title>Spelljinxer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" href="./projects.css">
   <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
@@ -18,21 +19,58 @@
   <div class="container">
     <canvas id='canvas'></canvas>
   </div>
-  <div class="watermark">
-    <span class="jap-text">侘寂</span> |&nbsp; Beauty in Imperfection
-  </div>
-  <div class="bottom-shapes">
-    <div class="items">
-      <div class="diamond"></div>
-      <a href="./designs.html"><div class="diamond2"></div></a>
-      <a href="./index.html"><div class="diamond3"></div></a>
+
+<div class="watermark">
+  <span class="jap-text">侘寂</span> |&nbsp; Beauty in Imperfection
+</div>
+<div id="wrapper">    
+    <div id="welcome">
+      <h1>Welcome</h1>
+      <div class="typing">
+        <span style="color: rgb(248, 240, 131)">$echo</span>
+        <span style="color: #fff">Spelljinxer's Portfolio.</span>
+      </div>
+    </div>
+</div>
+
+<div class="main-body">
+  <div class="col-md-6 border-right">
+    <div class="left-items">
+      <img class="project-image" src="./images/projects/project-1.png"></img>
     </div>
   </div>
-  <div id="banner">
-    <h1 class="effect-wrapper"> ~$ > <span id="typed"></span><span  class="cursor">&nbsp;</span></h1>
+  <div class="col-md-6 right">
+    <div class="right-items">
+      <div class="right-title">
+        <h1>Project 1 Lorem Ipsum</h1>
+        <div class="about-section">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+            Tempora expedita reiciendis perferendis asperiores, earum doloribus vel ducimus cupiditate et! 
+            Tempore, fuga. Dolorum veniam porro placeat a iure iste alias ex.
+            <br><br><br><br><br><br><br><br>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <br><br><br><br><br><br><br>
   </div>
-  
-    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script> -->
-  <script  src="./script.js"></script>
+
+  <div class="bottom-shapes">
+    <div class="items">
+      <a href="./projects.html"><div class="diamond"></div></a>
+      <a href="./designs.html"><div class="diamond2"></div></a>
+      <div class="diamond3"></div>
+    </div>
+  </div>
+</div>
+
+<div id="banner">
+  <h1 class="effect-wrapper"> ~$ > <span id="typed"></span><span  class="cursor">&nbsp;</span></h1>
+</div>
+
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script> -->
+<script  src="./script.js"></script>
 </body>
 </html>
