@@ -457,6 +457,238 @@ canvas {
   }
 }
 
+/* ---------------------------tools-------------------------- */
+
+.tools{
+  margin-left: 6.25%;
+  margin-top: 3%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tools p>span{
+  font-size: 0.9rem;
+  color: rgb(230, 230, 230);
+  letter-spacing: 1px;
+  margin-left: 1.65%;
+  display: inline-block;
+  -webkit-animation: fadeIn-right 1.65s ease-in-out;
+  -moz-animation: fadeIn-right 1.65s ease-in-out;
+  -o-animation: fadeIn-right 1.65s ease-in-out;
+  animation: fadeIn-right 1.65s ease-in-out;
+}
+
+.tools p:before{
+  font-family: FontAwesome;
+  content: "\f7d9";
+  margin-right: 4px;  
+  color:var(--main-color);
+  -webkit-animation: fadeIn-right 1.35s ease-in-out;
+  -moz-animation: fadeIn-right 1.35s ease-in-out;
+  -o-animation: fadeIn-right 1.35s ease-in-out;
+  animation: fadeIn-right 1.35s ease-in-out;
+}
+
+/* ---------------------------languages-------------------------- */
+
+
+.languages{
+  margin-left: 6.25%;
+  margin-top: 2%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.languages p>span{
+  font-size: 0.9rem;
+  color: rgb(230, 230, 230);
+  letter-spacing: 1px;
+  margin-left: 1%;
+  display: inline-block;
+  -webkit-animation: fadeIn-right 1.65s ease-in-out;
+  -moz-animation: fadeIn-right 1.65s ease-in-out;
+  -o-animation: fadeIn-right 1.65s ease-in-out;
+  animation: fadeIn-right 1.65s ease-in-out;
+}
+
+.languages p:before{
+  font-family: FontAwesome;
+  content: "\f121";
+  margin-right: 4px;  
+  color:var(--main-color);
+  -webkit-animation: fadeIn-right 1.35s ease-in-out;
+  -moz-animation: fadeIn-right 1.35s ease-in-out;
+  -o-animation: fadeIn-right 1.35s ease-in-out;
+  animation: fadeIn-right 1.35s ease-in-out;
+}
+
+
+/* ---------------------------github------------------------ */
+
+.github{
+  margin-left: 6.5%;
+  margin-top: 2%;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 51%;
+}
+.github p>span{
+  font-size: 0.9rem;
+  color: rgb(230, 230, 230);
+  letter-spacing: 1px;
+  margin-left: 2.75%;
+  display: inline-block;
+  -webkit-animation: fadeIn-right 1.65s ease-in-out;
+  -moz-animation: fadeIn-right 1.65s ease-in-out;
+  -o-animation: fadeIn-right 1.65s ease-in-out;
+  animation: fadeIn-right 1.65s ease-in-out;
+}
+
+.github p:before{
+  font-family: FontAwesome;
+  content: "\f09b";
+  margin-right: 4px;  
+  color:var(--main-color);
+  -webkit-animation: fadeIn-right 1.35s ease-in-out;
+  -moz-animation: fadeIn-right 1.35s ease-in-out;
+  -o-animation: fadeIn-right 1.35s ease-in-out;
+  animation: fadeIn-right 1.35s ease-in-out;
+  
+}
+a{
+  text-decoration: none;
+}
+
+/* ---------------------------discord-------------------------- */
+
+.discord{
+  margin-left: 6.25%;
+  margin-top: 2%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.discord p>span{
+  font-size: 0.9rem;
+  color: rgb(230, 230, 230);
+  letter-spacing: 1px;
+  margin-left: 1%;
+  display: inline-block;
+  -webkit-animation: fadeIn-right 1.65s ease-in-out;
+  -moz-animation: fadeIn-right 1.65s ease-in-out;
+  -o-animation: fadeIn-right 1.65s ease-in-out;
+  animation: fadeIn-right 1.65s ease-in-out;
+}
+
+.discord p:before{
+  font-family: FontAwesome;
+  content: "\f392";
+  margin-right: 4px;  
+  color:var(--main-color);
+  -webkit-animation: fadeIn-right 1.35s ease-in-out;
+  -moz-animation: fadeIn-right 1.35s ease-in-out;
+  -o-animation: fadeIn-right 1.35s ease-in-out;
+  animation: fadeIn-right 1.35s ease-in-out;
+}
+
+@media screen and (max-width: 830px){
+  .tools, .languages, .github, .discord{
+    white-space: nowrap;
+    margin-left: 7%;
+  }
+  .tools p>span, .languages p>span{
+    white-space: pre-wrap;
+  }
+  .discord p>span{
+    left:50%;
+  }
+}
+
+/* ---------------------------shapes------------------------- */
+
+.shapes{
+  margin-left: 6.5%;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-animation: fadeIn-right 1.35s ease-in-out;
+  -moz-animation: fadeIn-right 1.35s ease-in-out;
+  -o-animation: fadeIn-right 1.35s ease-in-out;
+  animation: fadeIn-right 1.35s ease-in-out;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+.square{
+  height: 20px;
+  width: 20px;
+  background-color: #e6e6e6;
+  display: inline-block;
+}
+.square2{
+  height: 20px;
+  width: 20px;
+  background-color: #ebe8d3;
+  display: inline-block;
+  margin-left: 0.6%;
+}
+.square3{
+  height: 20px;
+  width: 20px;
+  background-color: #f0eac0;
+  display: inline-block;
+  margin-left: 0.6%;
+}
+.square4{
+  height: 20px;
+  width: 20px;
+  background-color: #f3ecac;
+  display: inline-block;
+  margin-left: 0.6%;
+}
+.square5{
+  height: 20px;
+  width: 20px;
+  background-color: #f6ee98;
+  display: inline-block;
+  margin-left: 0.6%;
+}
+.square6{
+  height: 20px;
+  width: 20px;
+  background-color: #f8f083;
+  display: inline-block;
+  margin-left: 0.6%;
+}
+.square7{
+  height: 20px;
+  width: 20px;
+  background-color: #ffcd74;
+  display: inline-block;
+  margin-left: 0.6%;
+}
+.square8{
+  height: 20px;
+  width: 20px;
+  background-color: #ffa884;
+  display: inline-block;
+  margin-left: 0.6%;
+}
+.square9{
+  height: 20px;
+  width: 20px;
+  background-color: #ff89a8;
+  display: inline-block;
+  margin-left: 0.6%;
+}
+.square10{
+  height: 20px;
+  width: 20px;
+  background-color: #ff7cd4;
+  display: inline-block;
+  margin-left: 0.6%;
+}
+.square11{
+  height: 20px;
+  width: 20px;
+  background-color: #ba83f8;
+  display: inline-block;
+  margin-left: 0.6%;
+}
 
 /* -------------------------bottom shapes----------------------------- */
 
