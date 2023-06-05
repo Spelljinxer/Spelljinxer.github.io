@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url(//fonts.googleapis.com/earlyaccess/nicomoji.css);
+@import url(//fonts.googleapis.com/earlyaccess/nikukyu.css);
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&display=swap');
+
+body {
+    background-color: #1d2049;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  /* Create a container for the stars */
+  #stars {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  /* Define the star styling */
+  .star {
+    position: absolute;
+    background-color: #FFF;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 1; /* Set the initial opacity to 1 */
+    animation: twinkling linear infinite;
+  }
+
+  /* Define the twinkling animation */
+  @keyframes twinkling {
+    0% {
+      opacity: 0;
+      transform: translate(0, 0);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(-6px, 12px);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(0, 0);
+    }
+  }
