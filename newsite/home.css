@@ -102,11 +102,15 @@ body {
     overflow-y: auto;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
+    color: white; /* placeholder, change later */
 }
+
+
+/* -------------------------------------- JAP TEXT BOTTOM -------------------- */
 
 .caption {
     position: absolute;
-    bottom: 20px; /* Adjust the value as per your preference */
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
