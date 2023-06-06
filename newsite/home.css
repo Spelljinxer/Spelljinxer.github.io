@@ -100,6 +100,7 @@ body {
   padding: 20px;
   font-family: 'Montserrat', sans-serif;
   color: white; /* placeholder, change later */
+  max-height: 300px; /* THIS MIGHT POSE A PROBLEM LATER PEPELAUGH */
 }
 
 
@@ -139,6 +140,8 @@ body {
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    font-size: 10px;
+    max-width: fit-content; /* POG, POTENTIAL FIX??????? */
   }
 }
 
