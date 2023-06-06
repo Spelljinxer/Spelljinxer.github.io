@@ -16,6 +16,13 @@ body {
     overflow: hidden;
   }
 
+html{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
   /* Create a container for the stars */
   #stars {
     width: 100%;
@@ -53,7 +60,7 @@ body {
     }
   }
 
-/* -------------------- BOX ------------------------ */
+/* -------------------- MAIN BOX ------------------------ */
 
 .box {
     position: absolute;
@@ -144,8 +151,6 @@ body {
     max-width: fit-content; /* POG, POTENTIAL FIX??????? */
   }
 }
-
-
 
 /* -------------------------------------- JAP TEXT BOTTOM -------------------- */
 
