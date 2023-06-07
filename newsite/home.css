@@ -266,7 +266,47 @@ html, body{
     width: 90%;
     
   }
-  
+}
+
+.description {
+  border: 1px solid white;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center items vertically */
+  text-align: center;
+}
+
+.number-box {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  margin-right: 10px;
+  width: 30px;
+  font-family: 'Pacifico', cursive;
+  font-size: 0.8em;
+}
+
+.description h1 {
+  font-size: 1em;
+  color: white;
+  margin: 0;
+  flex: 1; /* Take up remaining space */
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+@media (max-width: 767px){
+  .description{
+    width: 102.5%;
+  }
+  .number-box{
+    margin: 0px;
+    height: 100%;
+  }
+  .description h1{
+    font-size: 0.75em;
+  }
 }
 
 /* -------------------- SCROLL BAR ------------------------ */
