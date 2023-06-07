@@ -251,6 +251,12 @@ html, body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: filter 0.5s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.item .image-container:hover{
+  filter: brightness(200%);
 }
 
 @media (max-width: 767px){
