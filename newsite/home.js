@@ -17,6 +17,7 @@ function createStars() {
     star.style.setProperty("--parallax-depth", getRandomNumber(1, 5));
     star.style.setProperty("--parallax-direction-x", getRandomNumber(-10, 10) + "px");
     star.style.setProperty("--parallax-direction-y", getRandomNumber(-10, 10) + "px");
+    star.style.setProperty("--parallax-direction-z", getRandomNumber(-10, 10) + "px");
     starsContainer.appendChild(star);
   }
 }

@@ -46,7 +46,7 @@ html, body{
   height: 2px;
   border-radius: 50%;
   opacity: 1;
-  animation: twinkling linear infinite 5s;
+  animation: twinkling linear infinite 3s;
   transform-style: preserve-3d;
 }
 
@@ -58,9 +58,9 @@ html, body{
   50% {
     opacity: 1;
     transform: translate3d(
-      calc(var(--parallax-direction-x) * 4),
-      calc(var(--parallax-direction-y) * 4),
-      0
+      calc(var(--parallax-direction-x) * 3),
+      calc(var(--parallax-direction-y) * 3),
+      calc(var(--parallax-direction-z) * 3)
     );
   }
   100% {
