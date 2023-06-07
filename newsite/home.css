@@ -240,6 +240,7 @@ html, body{
   padding: 10px;
 }
 
+/* --------------- FIRST RIGHT ITEM ----------------------*/
 .item .image-container {
   display: flex;
   justify-content: center;
@@ -267,6 +268,8 @@ html, body{
   }
   
 }
+
+/* -------------------- SCROLL BAR ------------------------ */
 
 .right-section::-webkit-scrollbar {
   width: 2px; /* Adjust the width of the scrollbar */
