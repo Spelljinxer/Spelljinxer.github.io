@@ -244,7 +244,7 @@ html, body{
   align-items: center;
   height: 100%;
   box-sizing: content-box;
-  background-image: url(./images/91882132_p0.jpg);
+  background-image: url(./images/52288462_p0.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -263,14 +263,7 @@ html, body{
     width: 90%;
     
   }
-  .item .image-container {
-    /* height: 100%; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(./images/91882132_p0.jpg);
-    width: 100%;
-  }
+  
 }
 
 .right-section::-webkit-scrollbar {
@@ -293,3 +286,4 @@ html, body{
 .right-section::-webkit-scrollbar-thumb:active {
   background-color: #355085; /* Set the color of the scrollbar thumb when active */
 }
+
