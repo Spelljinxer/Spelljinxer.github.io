@@ -7,7 +7,7 @@ function getRandomNumber(min, max) {
 function createStars() {
   var starsContainer = document.getElementById("stars");
 
-  for (var i = 0; i < 1000; i++) {
+  for (var i = 0; i < 650; i++) {
     var star = document.createElement("div");
     star.className = "star";
     star.style.top = getRandomNumber(0, 100) + "%";
