@@ -273,17 +273,8 @@ html, body{
   }
 }
 
-
-
-
-
-
-
-
-
-
 .right-section::-webkit-scrollbar {
-  width: 6px; /* Adjust the width of the scrollbar */
+  width: 2px; /* Adjust the width of the scrollbar */
 }
 
 .right-section::-webkit-scrollbar-track {
