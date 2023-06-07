@@ -125,6 +125,7 @@ html, body{
     opacity: 0;
     animation: fade-in 1s ease-in-out forwards; 
     z-index: 1;
+    scroll-behavior: smooth;
 }
 
 @keyframes fade-in {
@@ -157,6 +158,7 @@ html, body{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  scroll-behavior: smooth;
 }
 
 
