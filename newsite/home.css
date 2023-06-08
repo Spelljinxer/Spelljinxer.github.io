@@ -296,6 +296,7 @@ html, body{
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     opacity: 0.5;
+    white-space: nowrap;
   }
 
 .jap-text{
@@ -304,6 +305,20 @@ html, body{
     font-weight: 500;
     letter-spacing: 5px;
     font-family: 'Nico Moji', cursive;
+}
+
+@media (max-width: 767px){
+  .text-container{
+    position: fixed;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+  }
+  .caption{
+    position: relative;
+    font-size: 0.9em;
+  }
 }
 
 
@@ -435,7 +450,12 @@ hr { margin-top: 25px; margin-bottom: 25px; background-color: var(--border-color
   background-color: #355085; /* Set the color of the scrollbar thumb when active */
 }
 
-
-.image-container second{
-  background-image: none;
+/* --------------------- CIRCLES -------------------- */
+.circles {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
 }
