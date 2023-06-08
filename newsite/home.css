@@ -340,7 +340,6 @@ html, body{
   align-items: center;
   height: 100%;
   box-sizing: content-box;
-  background-image: url(./images/52288462_p0.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -436,3 +435,7 @@ hr { margin-top: 25px; margin-bottom: 25px; background-color: var(--border-color
   background-color: #355085; /* Set the color of the scrollbar thumb when active */
 }
 
+
+.image-container second{
+  background-image: none;
+}
