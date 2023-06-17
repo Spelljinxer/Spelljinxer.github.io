@@ -1,8 +1,17 @@
 var cursor = document.querySelector('.cursor'),
     cursorScale = document.querySelectorAll('.cursor-scale'),
     section1 = document.querySelector('.section1'),
-    mouseX = 0,
-    mouseY = 0;
+    windowWidth = window.innerWidth,
+    windowHeight = window.innerHeight,
+    mouseX = windowWidth / 2,
+    mouseY = windowHeight / 2;
+
+gsap.set(cursor, {
+    css: {
+        left: mouseX,
+        top: mouseY
+    }
+});
 
 gsap.to({}, 0.016, {
     repeat: -1,
