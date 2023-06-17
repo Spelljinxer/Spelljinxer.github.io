@@ -54,12 +54,15 @@ html, body{
   color: #f0efef;
   text-align: left;
   margin-left: 5px;
+	width: 20%;
+	white-space: nowrap;
 }
+
 
 .cursor{
 	position: fixed;
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	margin-left: -20px;
 	margin-top: -20px;
 	border-radius: 50%;
