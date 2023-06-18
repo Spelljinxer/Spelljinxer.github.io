@@ -383,3 +383,123 @@ html, body{
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* -------------------------------------   FOURTH SECTION (PROJECTS) --------------------------------------*/
+.section4 {
+  position: relative;
+  background-color: var(--alt-color);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 10%, 100% 95%, 0 80%);
+}
+
+.title {
+  position: relative;
+  top: 50px;
+  font-weight: 900;
+  color: var(--main-color);
+  letter-spacing: 0.6em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 50px;
+}
+
+.grid-item {
+  position: relative;
+  color: black;
+  padding: 35px;
+}
+
+.grid-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2; /* Reduce the opacity of the background image */
+  box-shadow: 0 0 250px rgb(0, 0, 0) inset;
+}
+
+.grid-item:nth-child(1)::before {
+  background-image: url("./images/project/placeholder.jpg"); /* Specify the path to the background image for the first grid item */
+}
+
+.grid-item:nth-child(2)::before {
+  background-image: url("./images/project/placeholder.jpg"); /* Specify the path to the background image for the second grid item */
+}
+
+.grid-item:nth-child(3)::before {
+  background-image: url("./images/project/placeholder.jpg"); /* Specify the path to the background image for the third grid item */
+}
+
+.grid-item:nth-child(4)::before {
+  background-image: url("./images/project/placeholder.jpg"); /* Specify the path to the background image for the fourth grid item */
+}
+
+.grid-item:nth-child(5)::before {
+  background-image: url("./images/project/placeholder.jpg"); /* Specify the path to the background image for the fifth grid item */
+}
+
+.grid-item.large {
+  grid-column: span 2;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.project-content h3 {
+  text-align: left;
+  opacity: 1;
+}
+
+.project-content p {
+  text-align: left;
+  opacity: 1;
+}
+
+.github-button {
+  align-self: flex-start;
+}
+
+
+
+/* Media Query for mobile devices */
+@media screen and (max-width: 767px) {
+  .section4{
+    clip-path: none;
+  }
+
+  .section4 h2{
+    position: static;
+    margin-top: 0;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .grid-item.large {
+    grid-column: initial;
+  }
+  .grid-item {
+    padding: 30px;
+  }
+}
