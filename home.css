@@ -34,7 +34,7 @@ html, body{
 }
 
 ::-webkit-scrollbar-track {
-  background-color: black;
+  background-color: #16181c;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -44,7 +44,7 @@ html, body{
 
 /* -------------------------------------   First section (title) --------------------------------------*/
 .section1 {
-  background-color: #000;
+  background-color: #16181c;
   color: #fff;
   display: flex;
   flex-direction: column;
