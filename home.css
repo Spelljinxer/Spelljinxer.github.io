@@ -421,7 +421,7 @@ html, body{
   position: relative;
   color: black;
   padding: 35px;
-  border: 1px solid rgba(0, 0, 0, 0.116);
+  /* border: 1px solid rgba(0, 0, 0, 0.116); */
 }
 
 .grid-item::before {
@@ -431,11 +431,16 @@ html, body{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(    to bottom right,    rgba(0, 0, 0, 0.6) 0%,    rgba(0, 0, 0, 0) 100%  );
-  /*Adjusttheimagepath*/background-size: cover;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  background-size: cover;
   background-position: center;
-  opacity: 0.1;
-  /*Reducetheopacityofthebackgroundimage*/box-shadow: 0 0 250px rgb(0, 0, 0) inset;
+  opacity: 0.125;
+  box-shadow: 0 0 250px rgb(0, 0, 0) inset;
   transition: filter 0.3s ease, opacity 0.3s ease;
   -webkit-transition: filter 0.3s ease, opacity 0.3s ease;
   -moz-transition: filter 0.3s ease, opacity 0.3s ease;
