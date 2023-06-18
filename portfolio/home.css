@@ -192,8 +192,6 @@ html, body{
 }
 
 
-
-
 .container .section2-content {
   flex: 1;
 }
@@ -330,13 +328,52 @@ html, body{
 }
 
 /* -------------------------------------   Second section (about) --------------------------------------*/
-.section3{
+.section3 {
   position: relative;
   background-color: white;
   padding: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   text-align: center;
   height: auto;
+}
+
+.section3 h2 {
+  margin-top: 0;
+  font-size: 30px;
+  color: var(--main-color);
+	font-weight: 900;
+}
+
+.tech-stack {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-item i {
+  font-size: 40px;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.tech-item span {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .tech-stack {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
