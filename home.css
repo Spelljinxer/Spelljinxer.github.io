@@ -28,7 +28,7 @@ html, body{
 	scroll-behavior: smooth;
 }
 
-/* -------------------------------------   scrollbar  --------------------------------------*/
+/* -------------------------------------   SCROLLBAR  --------------------------------------*/
 ::-webkit-scrollbar {
   width: 4px; 
 }
@@ -40,6 +40,7 @@ html, body{
 ::-webkit-scrollbar-thumb {
   background-color: var(--alt-color);
 }
+
 
 /* -------------------------------------   First section (title) --------------------------------------*/
 .section1 {
