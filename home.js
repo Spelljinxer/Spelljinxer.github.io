@@ -1,3 +1,20 @@
+
+// scrollalternate
+const topBar = document.querySelector(".topBar");
+const bottomBar = document.querySelector(".bottomBar");
+
+document.addEventListener("scroll", () => {
+  const height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  const top = (window.scrollY / height) * 100;
+  const bottom = Math.abs(top - 100);
+
+  topBar.style.height = `calc(${top}%)`;
+  bottomBar.style.height = `calc(${bottom}% - 20px)`;
+});
+
+
 var cursor = document.querySelector('.cursor');
 var cursorScale = document.querySelectorAll('.cursor-scale');
 var section1 = document.querySelector('.section1');
@@ -90,3 +107,26 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('DOMContentLoaded', handleScroll);
 
+
+document.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY || window.pageYOffset;
+  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  const documentHeight = document.documentElement.scrollHeight;
+
+  if (scrollPosition + windowHeight >= documentHeight) {
+    document.body.classList.add("show-footer");
+  } else {
+    document.body.classList.remove("show-footer");
+  }
+});
+
+function scrollToTop() {
+  const scrollToTop = window.setInterval(function () {
+    const currentPosition = window.pageYOffset;
+    if (currentPosition > 0) {
+      window.scrollTo(0, currentPosition - 50);
+    } else {
+      window.clearInterval(scrollToTop);
+    }
+  }, 16);
+}

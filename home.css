@@ -507,6 +507,7 @@ html, body{
 @media screen and (max-width: 767px) {
   .section4{
     clip-path: none;
+    height: auto;
   }
 
   .section4 h2{
@@ -525,8 +526,131 @@ html, body{
     padding: 30px;
   }
 }
+/* -------------------------------------   SECTION 5 ??? --------------------------------------*/
+.section5 {
+  position: relative;
+  background-color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+}
 
+.finalquote {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+}
 
+.finalquote p {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.drink{
+  color: #352a22;
+  font-weight: 800;
+}
+
+.cup {
+  position: relative;
+  margin-top: 30px;
+  width: 100px;
+  height: 60px;
+  border: 8px solid #ffefdb;
+  box-shadow: 0 0 0 12px #352a22;
+  border-radius: 10px 10px 60px 75px;
+  background: url('./images/misc/coffee.png');
+  background-repeat: repeat-x;
+  background-position: 0 130px;
+  animation: filling 4s infinite;
+  -webkit-border-radius: 10px 10px 60px 75px;
+  -moz-border-radius: 10px 10px 60px 75px;
+  -ms-border-radius: 10px 10px 60px 75px;
+  -o-border-radius: 10px 10px 60px 75px;
+}
+
+@keyframes filling {
+  0%, 100% {
+      background-position: 0 130px;
+  }
+
+  50% {
+      background-position: 600px -70px;
+  }
+}
+
+.cup .cup-handle {
+  position: absolute;
+  top: -5px;
+  right: -60px;
+  width: 30px;
+  height: 30px;
+  border: 12px solid #352a22;
+  border-radius: 20px 10px 50px 20px;
+}
+
+.cup .steam {
+  position: absolute;
+  border-radius: 10px 2px;
+  width: 8px;
+  animation: steaming 2s infinite;
+  -webkit-animation: steaming 2s infinite;
+  -webkit-border-radius: 10px 2px;
+  -moz-border-radius: 10px 2px;
+  -ms-border-radius: 10px 2px;
+  -o-border-radius: 10px 2px;
+}
+
+@keyframes steaming {
+  0%, 100% {
+      opacity: 0;
+  }
+
+  50% {
+      opacity: 1;
+      filter: blur(.8px);
+      transform: translateY(-10px);
+  }
+}
+
+.cup .steam:nth-child(1) {
+  top: -70px;
+  left: 65px;
+  height: 30px;
+  background: #8e5a3423;
+  animation-delay: .1s;
+}
+
+.cup .steam:nth-child(2) {
+  top: -120px;
+  left: 95px;
+  height: 50px;
+  background: #8e5a3454;
+  animation-delay: .5s;
+}
+
+.cup .steam:nth-child(3) {
+  top: -90px;
+  left: 125px;
+  height: 40px;
+  background: #8e5a3433;
+  animation-delay: .7s;
+}
+
+@media screen and (max-width: 767px) {
+  .finalquote p {
+    padding-top: 26px;
+    font-size: 18px;
+  }
+}
 
 /* -------------------------------------   FADE IN ELEMENTS --------------------------------------*/
 .section2,
@@ -544,4 +668,48 @@ html, body{
 .section3.fade-in,
 .section4.fade-in{
   opacity: 1;
+}
+
+
+/* -------------------------------------   FOOTER ELEMENTS --------------------------------------*/
+.footer {
+  background-color: var(--main-color);
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  line-height: 1.5;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-link {
+  margin: 0 10px;
+  color: #888;
+  font-size: 24px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon-link:hover {
+  color: #fff;
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* Show the footer when scrolled to the bottom */
+body {
+  margin-bottom: 60px; 
+}
+
+body.show-footer .footer {
+  display: block;
 }
