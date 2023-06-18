@@ -670,6 +670,19 @@ html, body{
   opacity: 1;
 }
 
+.section5{
+  opacity: 0;
+  transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -ms-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+}
+
+.section5.fade-in{
+  opacity: 1;
+}
+
 
 /* -------------------------------------   FOOTER ELEMENTS --------------------------------------*/
 .footer {

@@ -97,11 +97,13 @@ function fadeSectionIn(section) {
 var section2 = document.querySelector('.section2');
 var section3 = document.querySelector('.section3');
 var section4 = document.querySelector('.section4');
+var section5 = document.querySelector('.section5');
 
 function handleScroll() {
   fadeSectionIn(section2);
   fadeSectionIn(section3);
   fadeSectionIn(section4);
+  fadeSectionIn(section5);
 }
 
 window.addEventListener('scroll', handleScroll);
