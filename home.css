@@ -327,6 +327,7 @@ html, body{
 	}
 }
 
+
 /* -------------------------------------   Second section (about) --------------------------------------*/
 .section3 {
   position: relative;
@@ -474,12 +475,13 @@ html, body{
 .project-content h3 {
   text-align: left;
   font-size: 20px;
+  font-weight: 800;
   opacity: 1;
 }
 
 .project-content p {
   text-align: left;
-  font-weight: 500;
+  font-weight: 600;
   opacity: 1;
 }
 
@@ -510,4 +512,20 @@ html, body{
   .grid-item {
     padding: 30px;
   }
+}
+
+
+
+/* -------------------------------------   FADE IN ELEMENTS --------------------------------------*/
+.section2,
+.section3,
+.section4{
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.section2.fade-in,
+.section3.fade-in,
+.section4.fade-in{
+  opacity: 1;
 }

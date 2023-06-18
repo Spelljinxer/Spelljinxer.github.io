@@ -58,3 +58,34 @@ window.addEventListener("load", function() {
   });
   window.dispatchEvent(event);
 });
+
+// Fade in elements
+
+function isInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.bottom > 0 &&
+    rect.top < (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+function fadeSectionIn(section) {
+  if (isInViewport(section)) {
+    section.classList.add('fade-in');
+  } else {
+    section.classList.remove('fade-in');
+  }
+}
+
+var section2 = document.querySelector('.section2');
+var section3 = document.querySelector('.section3');
+var section4 = document.querySelector('.section4');
+
+function handleScroll() {
+  fadeSectionIn(section2);
+  fadeSectionIn(section3);
+  fadeSectionIn(section4);
+}
+
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('DOMContentLoaded', handleScroll);
