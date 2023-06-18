@@ -419,6 +419,7 @@ html, body{
   position: relative;
   color: black;
   padding: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.281);
 }
 
 .grid-item::before {
@@ -430,28 +431,28 @@ html, body{
   height: 100%;
   background-size: cover;
   background-position: center;
-  opacity: 0.2; /* Reduce the opacity of the background image */
+  opacity: 0.15; /* Reduce the opacity of the background image */
   box-shadow: 0 0 250px rgb(0, 0, 0) inset;
 }
 
 .grid-item:nth-child(1)::before {
-  background-image: url("./images/project/placeholder.jpg"); /* Specify the path to the background image for the first grid item */
+  background-image: url("./images/project/nikke.jpg"); /*  first grid item */
 }
 
 .grid-item:nth-child(2)::before {
-  background-image: url("./images/project/placeholder.jpg"); /* Specify the path to the background image for the second grid item */
+  background-image: url("./images/project/rvb.png"); /*  second grid item */
 }
 
 .grid-item:nth-child(3)::before {
-  background-image: url("./images/project/placeholder.jpg"); /* Specify the path to the background image for the third grid item */
+  background-image: url("./images/project/duplicates.jpg"); /*  third grid item */
 }
 
 .grid-item:nth-child(4)::before {
-  background-image: url("./images/project/placeholder.jpg"); /* Specify the path to the background image for the fourth grid item */
+  background-image: url("./images/project/runcool.png") /*  fourth grid item */
 }
 
 .grid-item:nth-child(5)::before {
-  background-image: url("./images/project/placeholder.jpg"); /* Specify the path to the background image for the fifth grid item */
+  background-image: url("./images/project/aquarium.png"); /* fifth grid item */
 }
 
 .grid-item.large {
