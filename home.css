@@ -419,7 +419,7 @@ html, body{
   position: relative;
   color: black;
   padding: 35px;
-  border: 1px solid rgba(0, 0, 0, 0.281);
+  border: 1px solid rgba(0, 0, 0, 0.116);
 }
 
 .grid-item::before {
@@ -429,9 +429,14 @@ html, body{
   left: 0;
   width: 100%;
   height: 100%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Adjust the image path */
   background-size: cover;
   background-position: center;
-  opacity: 0.15; /* Reduce the opacity of the background image */
+  opacity: 0.18; /* Reduce the opacity of the background image */
   box-shadow: 0 0 250px rgb(0, 0, 0) inset;
 }
 
