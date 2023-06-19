@@ -689,12 +689,11 @@ html, body{
   background-color: var(--main-color);
   padding: 20px 0;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-top: auto;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   line-height: 1.5;
-  display: none;
 }
 
 .container {
@@ -760,10 +759,3 @@ html, body{
 }
 
 
-body {
-  margin-bottom: 60px; 
-}
-
-body.show-footer .footer {
-  display: block;
-}

@@ -1,20 +1,4 @@
 
-// scrollalternate
-const topBar = document.querySelector(".topBar");
-const bottomBar = document.querySelector(".bottomBar");
-
-document.addEventListener("scroll", () => {
-  const height =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  const top = (window.scrollY / height) * 100;
-  const bottom = Math.abs(top - 100);
-
-  topBar.style.height = `calc(${top}%)`;
-  bottomBar.style.height = `calc(${bottom}% - 20px)`;
-});
-
-
 var cursor = document.querySelector('.cursor');
 var cursorScale = document.querySelectorAll('.cursor-scale');
 var section1 = document.querySelector('.section1');
@@ -122,13 +106,14 @@ document.addEventListener("scroll", () => {
   }
 });
 
-function scrollToTop() {
-  const scrollToTop = window.setInterval(function () {
-    const currentPosition = window.pageYOffset;
-    if (currentPosition > 0) {
-      window.scrollTo(0, currentPosition - 50);
-    } else {
-      window.clearInterval(scrollToTop);
+function smoothScrollToTop() {
+  const scrollToTop = () => {
+    const c = document.documentElement.scrollTop || document.body.scrollTop;
+    if (c > 0) {
+      window.requestAnimationFrame(scrollToTop);
+      window.scrollTo(0, c - c / 8);
     }
-  }, 16);
+  };
+
+  scrollToTop();
 }
