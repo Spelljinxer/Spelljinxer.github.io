@@ -14,6 +14,7 @@
 :root{
 	--main-color: #2f333a;
 	--alt-color: #dbd06a;
+  --diff-color: #594974;
 }
 
 body {
@@ -52,6 +53,10 @@ html, body{
   align-items: center;
 	height: 100%;
 	cursor: none;
+  background-image: url(./images/bg-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .section1-content {
@@ -232,7 +237,6 @@ html, body{
   }
 }
 
-
 @media screen and (max-width: 767px) {
 	.section1 h1 {
 		font-size: 40px;
@@ -247,6 +251,7 @@ html, body{
 	}
 	.section1{
 		cursor: pointer;
+    background-size:cover;
 	}
 	.quote-text{
 		font-size: 13px;
@@ -257,15 +262,14 @@ html, body{
   }
 
   @keyframes drawUnderscore{
-    0%{
-      width: 0;
-    }
-    100%{
-      width: calc(10% - 5px);
-    }
+      0%{
+        width: 0;
+      }
+      100%{
+        width: calc(10% - 5px);
+      }
   }
-
-  }
+}
 
 
 
@@ -351,13 +355,13 @@ html, body{
 .pfpquote-text {
   font-size: 14px !important;
   color: #000;
+  white-space: nowrap;
 }
 
 .highlight {
   color: var(--main-color);
   font-weight: 800;
 }
-
 
 .resume-button {
   margin-top: 20px;
@@ -508,7 +512,7 @@ html, body{
 /* -------------------------------------   FOURTH SECTION (PROJECTS) --------------------------------------*/
 .section4 {
   position: relative;
-  background-color: var(--alt-color);
+  background-color: var(--diff-color);
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -523,7 +527,7 @@ html, body{
   position: relative;
   top: 50px;
   font-weight: 900;
-  color: var(--main-color);
+  color: #fff;
   letter-spacing: 0.6em;
 }
 

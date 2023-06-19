@@ -112,3 +112,9 @@ window.addEventListener('DOMContentLoaded', function() {
   scrollAnimation.style.opacity = '0';
   scrollAnimationTwo[0].style.opacity = '0';
 });
+
+//back to top button
+
+
+
+
