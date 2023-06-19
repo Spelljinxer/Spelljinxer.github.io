@@ -168,8 +168,10 @@ html, body{
   -webkit-animation: fade-in-mouse 1s ease-in-out 1.25s forwards;
   -moz-animation: fade-in-mouse 1s ease-in-out 1.25s forwards;
   -o-animation: fade-in-mouse 1s ease-in-out 1.25s forwards;
-  width: 10%;
+  width: 30%;
   height: 10%;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes fade-in-mouse {
@@ -184,7 +186,10 @@ html, body{
 #scroll-down-animation h2 {
   color: #fff;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 15px;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
 }
 
 .mouse {
