@@ -42,9 +42,9 @@ cursorScale.forEach(link => {
     cursor.classList.remove('grow');
     cursor.classList.remove('grow-small');
   });
-  link.addEventListener('mousemove', () => {
+  link.addEventListener('mousemove', (e) => {
     cursor.classList.add('grow');
-    if (link.classList.contains('small')) {
+    if (e.target.classList.contains('small')) {
       cursor.classList.remove('grow');
       cursor.classList.add('grow-small');
     }
@@ -106,14 +106,9 @@ document.addEventListener("scroll", () => {
   }
 });
 
-function smoothScrollToTop() {
-  const scrollToTop = () => {
-    const c = document.documentElement.scrollTop || document.body.scrollTop;
-    if (c > 0) {
-      window.requestAnimationFrame(scrollToTop);
-      window.scrollTo(0, c - c / 8);
-    }
-  };
-
-  scrollToTop();
-}
+window.addEventListener('DOMContentLoaded', function() {
+  var scrollAnimation = document.getElementById('scroll-down-animation');
+  var scrollAnimationTwo = document.getElementsByClassName('box');
+  scrollAnimation.style.opacity = '0';
+  scrollAnimationTwo[0].style.opacity = '0';
+});
