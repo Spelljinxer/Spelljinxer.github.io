@@ -57,6 +57,7 @@ html, body{
 .section1-content {
   text-align: center;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .section1 h1 {
@@ -75,6 +76,27 @@ html, body{
 	white-space: nowrap;
 	font-weight: 300;
 	height: 30%;
+}
+
+.subtitle-underscore {
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  width: calc(10% - 10px);
+  height: 2px;
+  background-color: var(--alt-color);
+  margin-left: 5px;
+  animation: drawUnderscore 0.7s ease-out forwards;
+  -webkit-animation: drawUnderscore 0.7s ease-out forwards;
+}
+
+@keyframes drawUnderscore{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: calc(10% - 10px);
+  }
 }
 
 .cursor{
@@ -229,7 +251,22 @@ html, body{
 	.quote-text{
 		font-size: 13px;
 	}
-}
+
+  .subtitle-underscore{
+    left: -3px;
+  }
+
+  @keyframes drawUnderscore{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: calc(10% - 5px);
+    }
+  }
+
+  }
+
 
 
 
