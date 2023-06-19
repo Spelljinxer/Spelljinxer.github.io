@@ -271,9 +271,6 @@ html, body{
   }
 }
 
-
-
-
 /* -------------------------------------   Second section (about) --------------------------------------*/
 .section2 {
   position: relative;
@@ -619,8 +616,8 @@ html, body{
 
 .project-content .tag {
   display: inline-block;
-  background-color: var(--alt-color);
-  color: var(--main-color);
+  background-color: var(--diff-color);
+  color: #fff;
   padding: 6px 12px;
   border-radius: 1px;
   margin-right: 10px;
