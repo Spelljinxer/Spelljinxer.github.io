@@ -318,7 +318,7 @@ html, body{
 .image-container img {
   width: 75%;
   /* border: 2px solid var(--main-color); */
-  box-shadow: -20px 20px 0px 0px var(--alt-color);
+  box-shadow: -15px 15px 0px 0px var(--alt-color);
   position: relative;
   z-index: 1;
 }
