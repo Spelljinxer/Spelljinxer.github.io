@@ -316,10 +316,24 @@ html, body{
 }
 
 .image-container img {
-	width: 75%;
-	/* border: 2px solid var(--main-color); */
+  width: 75%;
+  /* border: 2px solid var(--main-color); */
+  box-shadow: -20px 20px 0px 0px var(--alt-color);
+  position: relative;
+  z-index: 1;
 }
 
+.image-container::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  width: calc(100% + 60px);
+  height: calc(100% + 60px);
+  opacity: 0.1;
+  z-index: -1;
+  transform: rotate(4deg);
+}
 
 .container .section2-content {
   flex: 1;
@@ -360,7 +374,7 @@ html, body{
 }
 
 .pfpquote {
-  margin-top: 20px;
+  margin-top: 30px;
 	margin-left: 20%;
   text-align: center;
 }
@@ -989,11 +1003,11 @@ html, body{
 .section3,
 .section4{
   opacity: 0;
-  transition: opacity 1.5s ease-out;
-  -webkit-transition: opacity 1.5s ease-out;
-  -moz-transition: opacity 1.5s ease-out;
-  -ms-transition: opacity 1.5s ease-out;
-  -o-transition: opacity 1.5s ease-out;
+  transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -ms-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
 }
 
 .section2.fade-in,
@@ -1099,3 +1113,4 @@ html, body{
   color: var(--alt-color);
   letter-spacing: 0.2em;
 }
+
