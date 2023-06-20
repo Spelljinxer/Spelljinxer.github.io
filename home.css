@@ -18,10 +18,11 @@
   --sub-text: #afb3b8;;
 }
 
+
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat', sans-serif;;
+	font-family: 'Montserrat', sans-serif;
 }
 
 html, body{
@@ -29,6 +30,7 @@ html, body{
 	height: 100%;
 	scroll-behavior: smooth;
 }
+
 
 /* -------------------------------------   SCROLLBAR  --------------------------------------*/
 ::-webkit-scrollbar {
@@ -529,8 +531,8 @@ html, body{
   align-items: center;
   text-align: center;
   /* overflow: hidden; */
-  height: auto;
-  /* clip-path: polygon(0 0, 100% 10%, 100% 95%, 0 80%); */
+  height: 150%;
+  clip-path: polygon(0 0, 100% 10%, 100% 95%, 0 80%);
 }
 .section4-content{
   /* background-color: red; */
@@ -538,14 +540,26 @@ html, body{
   max-width: 1000px;
   padding: 0 30px;
 }
+
 .title {
   position: absolute;
-  top: 50px;
+  top: 90px;
   font-weight: 900;
   color: #fff;
   letter-spacing: 0.6em;
 }
 
+.title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: -35px;
+  transform: translateY(-50%);
+}
 .col-text {
   height:20em;
 }
@@ -700,12 +714,16 @@ html, body{
   content: "";
   position: absolute;
   top: 0;
-  left: -100%;
+  right: 100%;
   width: 100%;
   height: 100%;
   background-color: #fff;
-  transition: left 0.3s ease;
-	z-index: -1;
+  transition: right 0.3s ease;
+  z-index: -1;
+  -webkit-transition: right 0.3s ease;
+  -moz-transition: right 0.3s ease;
+  -ms-transition: right 0.3s ease;
+  -o-transition: right 0.3s ease;
 }
 
 .github-button:hover::before {
@@ -722,17 +740,43 @@ html, body{
 }
 
 @media screen and (max-width: 767px) {
-  .section4{
+  .section4 {
+    /* Remove existing positioning rules */
+    position: static;
+    /* Add new styles for centering content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     clip-path: none;
     height: auto;
   }
-  .section4 h2{
-    position: static;
-    margin-top: 0;
+
+  .section4-content {
+    margin: 0 auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Adjust the title styles for visibility */
+  .title {
+    position: relative;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 0.6em;
+    top: -30px;
+  }
+
+  /* Remove the horizontal line in mobile view */
+  .title::after {
+    display: none;
   }
 }
 
-@media (max-width: 767px) {
+
+@media screen and (max-width: 767px) {
   .grid-flex {
     height: 40em;
     display: -webkit-flex;
@@ -762,30 +806,31 @@ html, body{
   .pr1{
     margin-top: 0px;
   }
-
   .Aligner-item h2, h1{
     text-align: center;
   }
-
   .p2 h1{
     text-align: center;
   }
-
   .Aligner-item .tags{
     justify-content: center;
+    align-items: center;
   }
-
-  .right-text, .left-text {
+  .right-text,
+  .left-text {
     text-align: justify;
-    color: var(--alt-color);
-    font-weight: 500;
-    font-size: 1em;
-    max-width: 100%; /* Adjust the max-width as desired */
-    width: 100%; /* Add this line to stretch the width of the text */
-    word-wrap: normal; /* Add this line to prevent irregular gaps */
-    margin: 0 auto;
-    padding-right: 5px;
-  }
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: inline-block;
+    width: auto;
+    hyphens: auto !important;
+    -webkit-hyphens: auto !important;
+    -moz-hyphens: auto !important;
+    -ms-hyphens: auto !important;
+}
 
   .github-button{
     float: none;
@@ -800,7 +845,6 @@ html, body{
     margin: 0 auto;
     margin-top: 2em 
   }
-
 }
 
 /* -------------------------------------   SECTION 5 idk --------------------------------------*/
