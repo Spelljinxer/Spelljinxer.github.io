@@ -15,12 +15,13 @@
 	--main-color: #2f333a;
 	--alt-color: #dbd06a;
   --diff-color: #594974;
+  --sub-text: #afb3b8;;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;;
 }
 
 html, body{
@@ -81,7 +82,7 @@ html, body{
 	white-space: nowrap;
 	font-weight: 500;
 	height: 30%;
-  color: #afb3b8;
+  color: var(--sub-text);
   letter-spacing: 2px;
 }
 
@@ -461,7 +462,7 @@ html, body{
 }
 
 
-/* -------------------------------------   third section (project) --------------------------------------*/
+/* -------------------------------------   third section (stack) --------------------------------------*/
 .section3 {
   position: relative;
   /* background-color: white; */
@@ -521,118 +522,142 @@ html, body{
 /* -------------------------------------   FOURTH SECTION (PROJECTS) --------------------------------------*/
 .section4 {
   position: relative;
-  background-color: var(--diff-color);
+  background-color: var(--main-color);
   padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  overflow: hidden;
-  height: 110%;
-  clip-path: polygon(0 0, 100% 10%, 100% 95%, 0 80%);
+  /* overflow: hidden; */
+  height: auto;
+  /* clip-path: polygon(0 0, 100% 10%, 100% 95%, 0 80%); */
 }
-
+.section4-content{
+  /* background-color: red; */
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 30px;
+}
 .title {
-  position: relative;
+  position: absolute;
   top: 50px;
   font-weight: 900;
   color: #fff;
   letter-spacing: 0.6em;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  justify-content: center;
-  margin-top: 10px;
-  padding: 50px;
+.col-text {
+  height:20em;
 }
-
-.grid-item {
-  position: relative;
-  /* color: black; */
-  padding: 35px;
-  /* border: 1px solid rgba(0, 0, 0, 0.116); */
-}
-
-.grid-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(    to bottom right,    rgba(0, 0, 0, 0.8) 0%,    rgba(0, 0, 0, 0.4) 50%,    rgba(0, 0, 0, 0.6) 100%  );
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  background-blend-mode: multiply;
-  transition: background-color 0.3s ease;
-  -webkit-transition: background-color 0.3s ease;
-  -moz-transition: background-color 0.3s ease;
-  -ms-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
-}
-
-.grid-item:hover::before{
-  background-color: rgba(0, 0, 0, 0.55);
-}
-
-.grid-item:nth-child(1)::before {
-  background-image: url("./images/project/nikke.jpg"); /*  first grid item */
-}
-
-.grid-item:nth-child(2)::before {
-  background-image: url("./images/project/rvb.png"); /*  second grid item */
-}
-
-.grid-item:nth-child(3)::before {
-  background-image: url("./images/project/duplicates.jpg"); /*  third grid item */
-}
-
-.grid-item:nth-child(4)::before {
-  background-image: url("./images/project/runcool.png") /*  fourth grid item */
-}
-
-.grid-item:nth-child(5)::before {
-  background-image: url("./images/project/aquarium.png"); /* fifth grid item */
-}
-
-.grid-item.large {
-  grid-column: span 2;
-}
-
-.project-content {
+.grid-flex {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row; 
+  -webkit-flex-direction: row;
+  /* -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around; */
+}
+.pr1{
+  margin-top: 150px;
+}
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.col-left {
+  -webkit-box-ordinal-group:-1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.col-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item {
+  width: 70%;
+  top: 0;
+}
+.p1, .p2{
+  width: 100%;
+}
+
+.col-image {
+  background-size: cover;
+  background-position:center center;
+}
+
+/* PROJECT TEXTS */
+
+.Aligner-item h2, h1{
+  text-align: right;
+}
+
+.Aligner-item h1{
+  font-size: 10px;
+  margin-bottom: 5px;
+  color: var(--alt-color);
+}
+
+.Aligner-item h2{
+  margin-top: 0;
   color: #fff;
-  position: relative;
-  z-index: 1;
+  letter-spacing: 2px;
+  font-size: 1.85em;
 }
 
-.project-content h3 {
+.p2 h2, .p2 h1{
   text-align: left;
-  font-size: 20px;
-  font-weight: 800;
-  opacity: 1;
 }
 
-.project-content .tags {
+.right-text, .left-text{
+  white-space: normal;
+  word-break: break-word;
+  text-align: justify;
+  color: var(--alt-color);
+  font-weight: 500;
+  font-size: 1em;
+  max-width: 90%;
+}
+
+.right-text{
+  text-align: right;
+  margin-left: auto;
+}
+
+.left-text{
+  text-align: left;
+  margin-right: auto;
+}
+
+.Aligner-item .tags {
   display: flex; /* Display tags in a row */
   flex-wrap: wrap; /* Wrap tags to the next line if necessary */
+  justify-content: flex-end;
   margin-bottom: 10px; /* Add margin at the bottom */
 }
 
-.project-content .tag {
+.p2 .tags{
+  justify-content: flex-start;
+}
+
+.Aligner-item .tag {
   display: inline-block;
   background-color: var(--diff-color);
   color: #fff;
   padding: 6px 12px;
   border-radius: 1px;
-  margin-right: 10px;
+  margin-left: 10px;
   margin-bottom: 5px;
   font-size: 11px;
   font-weight: 600;
@@ -644,15 +669,14 @@ html, body{
   -ms-border-radius: 1px;
   -o-border-radius: 1px;
 }
-.project-content p {
-  text-align: left;
-  font-weight: 600;
-  opacity: 1;
+
+.p2 .tag{
+  margin-right: 10px;
+  margin-left: 0;
 }
 
-
 .github-button {
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px 30px;
   background-color: transparent;
   color: #fff;
@@ -664,7 +688,7 @@ html, body{
   transition: background-color 0.3s ease;
   overflow: hidden;
   position: relative;
-  float: left;
+  float: right;
   width: fit-content;
   -webkit-transition: background-color 0.3s ease;
   -moz-transition: background-color 0.3s ease;
@@ -693,29 +717,92 @@ html, body{
   color: #000;
 }
 
-/* Media Query for mobile devices */
+.p2 .github-button{
+  float: left;
+}
+
 @media screen and (max-width: 767px) {
   .section4{
     clip-path: none;
     height: auto;
   }
-
   .section4 h2{
     position: static;
     margin-top: 0;
   }
-  .grid-container {
-    grid-template-columns: 1fr;
-    padding: 0;
+}
+
+@media (max-width: 767px) {
+  .grid-flex {
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column; 
+    margin-top: 5px;
+   }
+  .col {
+    order:vertical;
+  }
+  .col-left {
+    -webkit-box-ordinal-group:0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .col-image{
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .col-text div p {
+    padding: 1em;
+  }
+  .Aligner-item {
+    width: 90%;
+  }
+  .pr1{
+    margin-top: 0px;
   }
 
-  .grid-item.large {
-    grid-column: initial;
+  .Aligner-item h2, h1{
+    text-align: center;
   }
-  .grid-item {
-    padding: 30px;
+
+  .p2 h1{
+    text-align: center;
   }
+
+  .Aligner-item .tags{
+    justify-content: center;
+  }
+
+  .right-text, .left-text {
+    text-align: justify;
+    color: var(--alt-color);
+    font-weight: 500;
+    font-size: 1em;
+    max-width: 100%; /* Adjust the max-width as desired */
+    width: 100%; /* Add this line to stretch the width of the text */
+    word-wrap: normal; /* Add this line to prevent irregular gaps */
+    margin: 0 auto;
+    padding-right: 5px;
+  }
+
+  .github-button{
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em 
+  }
+
+  .p2 .github-button{
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em 
+  }
+
 }
+
 /* -------------------------------------   SECTION 5 idk --------------------------------------*/
 .section5 {
   position: relative;
@@ -727,6 +814,7 @@ html, body{
   align-items: center;
   text-align: center;
   height: 300px;
+  margin-top: 50px;
 }
 
 .finalquote {
