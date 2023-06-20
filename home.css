@@ -905,14 +905,14 @@ html, body{
 }
 
 .finalquote p {
-  font-size: 15px;
+  font-size: 19px;
   margin: 0;
   font-weight: 600;
   font-style: italic;
 }
 
 .drink{
-  color: #ac8f7b;
+  color: var(--alt-color);
   font-weight: 800;
 }
 
