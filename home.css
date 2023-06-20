@@ -329,7 +329,7 @@ html, body{
   margin-top: 0;
   text-align: right;
   font-size: 30px;
-	color: #fff;;
+	color: #fff;
 }
 
 .section2 p {
@@ -344,7 +344,7 @@ html, body{
 .section2-content h2{
 	margin-bottom: 25px;
 	font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 0.3em;
 }
 
 .section2-content p{
@@ -483,6 +483,7 @@ html, body{
   font-size: 30px;
   color: #fff;
 	font-weight: 900;
+  letter-spacing: 0.3em;
 }
 
 .tech-stack {
@@ -528,7 +529,7 @@ html, body{
   text-align: center;
   /* overflow: hidden; */
   height: 150%;
-  clip-path: polygon(0 0, 100% 10%, 100% 95%, 0 80%);
+  /* clip-path: polygon(0 0, 100% 10%, 100% 95%, 0 80%); */
 }
 .section4-content{
   /* background-color: red; */
@@ -1097,8 +1098,4 @@ html, body{
 .pre-header{
   color: var(--alt-color);
   letter-spacing: 0.2em;
-}
-
-.opp{
-  color: var(--diff-color);
 }
