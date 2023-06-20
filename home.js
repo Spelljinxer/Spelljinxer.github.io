@@ -30,6 +30,7 @@ window.addEventListener("mousemove", function(e) {
   mouseX = e.clientX;
   mouseY = e.clientY;
 
+
   if (!section1.contains(e.target)) {
     cursor.style.display = 'none';
   } else {
@@ -93,7 +94,7 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('DOMContentLoaded', handleScroll);
 
-
+// footer fix
 document.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY || window.pageYOffset;
   const windowHeight = window.innerHeight || document.documentElement.clientHeight;
@@ -106,6 +107,7 @@ document.addEventListener("scroll", () => {
   }
 });
 
+//scroll down animation in section 1
 window.addEventListener('DOMContentLoaded', function() {
   var scrollAnimation = document.getElementById('scroll-down-animation');
   var scrollAnimationTwo = document.getElementsByClassName('box');
@@ -118,3 +120,27 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 
+// Javascript is used to set the clock to your computer time.
+
+var currentSec = getSecondsToday();
+
+var seconds = (currentSec / 60) % 1;
+var minutes = (currentSec / 3600) % 1;
+var hours = (currentSec / 43200) % 1;
+
+setTime(60 * seconds, "second");
+setTime(3600 * minutes, "minute");
+setTime(43200 * hours, "hour");
+
+function setTime(left, hand) {
+  $(".clock__" + hand).css("animation-delay", "" + left * -1 + "s");
+}
+
+function getSecondsToday() {
+  let now = new Date();
+
+  let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+  let diff = now - today; 
+  return Math.round(diff / 1000);
+}
