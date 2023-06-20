@@ -79,8 +79,10 @@ html, body{
   margin-left: 5px;
 	width: 80%;
 	white-space: nowrap;
-	font-weight: 300;
+	font-weight: 500;
 	height: 30%;
+  color: #afb3b8;
+  letter-spacing: 2px;
 }
 
 .subtitle-underscore {
@@ -248,6 +250,7 @@ html, body{
 	.section1 .subtitle {
 		font-size: 14px;
 		margin-left: 1px;
+    letter-spacing: 1px;
 	}
 	.cursor{
 		display: none;
@@ -458,10 +461,10 @@ html, body{
 }
 
 
-/* -------------------------------------   Second section (about) --------------------------------------*/
+/* -------------------------------------   third section (project) --------------------------------------*/
 .section3 {
   position: relative;
-  background-color: white;
+  /* background-color: white; */
   padding: 50px;
   display: flex;
   flex-direction: column;
