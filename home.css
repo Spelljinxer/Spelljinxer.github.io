@@ -506,15 +506,15 @@ html, body{
   max-width: 100%;
   position: relative;
   width: 400px;
-  /*Adjustthewidthasneeded*/overflow: hidden;
+  overflow: hidden;
   white-space: nowrap;
   border-left: 1px solid var(--alt-color);
   border-right: 1px solid var(--alt-color);
-  border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -o-border-radius: 7px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
   padding: 20px;
   margin-top: 20px;
 }
@@ -539,7 +539,7 @@ html, body{
   filter:invert(100%);
   -webkit-filter:invert(100%);
 }
-
+ 
 @keyframes slide{
   from{
     transform: translateX(0)  ;
