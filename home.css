@@ -503,6 +503,7 @@ html, body{
 }
 
 .scrolling-container {
+  max-width: 100%;
   position: relative;
   width: 400px;
   /*Adjustthewidthasneeded*/overflow: hidden;
@@ -1267,7 +1268,7 @@ html, body{
 }
 
 /* -------------------------------------   FADE IN ELEMENTS --------------------------------------*/
-.section2,
+/* .section2,
 .section3,
 .section4{
   opacity: 0;
@@ -1295,7 +1296,7 @@ html, body{
 
 .section5.fade-in{
   opacity: 1;
-}
+} */
 
 
 /* -------------------------------------   FOOTER ELEMENTS --------------------------------------*/
