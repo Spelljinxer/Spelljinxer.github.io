@@ -318,12 +318,12 @@ html, body{
 
 .image-container img {
   width: 75%;
-  box-shadow: -15px 15px 0px 0px var(--alt-color);
+  box-shadow: -12px 12px 0px 0px var(--alt-color);
   position: relative;
   z-index: 1;
 }
 
-.image-container::before {
+/* .image-container::before {
   content: "";
   position: absolute;
   bottom: -20px;
@@ -333,7 +333,7 @@ html, body{
   opacity: 0.1;
   z-index: -1;
   transform: rotate(4deg);
-}
+} */
 
 .container .section2-content {
   flex: 1;
@@ -516,6 +516,7 @@ html, body{
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
   padding: 20px;
+  margin-top: 20px;
 }
 
 .scrolling-container:hover .scrolling-content{
