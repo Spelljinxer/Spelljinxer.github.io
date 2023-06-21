@@ -318,7 +318,7 @@ html, body{
 
 .image-container img {
   width: 75%;
-  box-shadow: -12px 12px 0px 0px var(--alt-color);
+  box-shadow: -13px 13px 0px 0px var(--alt-color);
   position: relative;
   z-index: 1;
 }
@@ -595,12 +595,12 @@ html, body{
 .title::after {
   content: "";
   display: block;
-  width: 70px;
+  width: 200px;
   height: 2px;
   background-color: #fff;
   position: absolute;
   top: 50%;
-  right: -85px;
+  right: -215px;
   transform: translateY(-50%);
 }
 
