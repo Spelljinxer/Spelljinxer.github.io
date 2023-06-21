@@ -714,7 +714,7 @@ html, body{
 
 .Aligner-item .tag {
   display: inline-block;
-  background-color: var(--sub-text);
+  background-color: #fff;;
   color: black;
   padding: 6px 12px;
   border-radius: 3px;
