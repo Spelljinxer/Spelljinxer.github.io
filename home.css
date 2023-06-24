@@ -46,6 +46,8 @@ html, body{
   background-color: var(--alt-color);
 }
 
+/* -------------------------------------   navbar --------------------------------------*/
+
 
 /* -------------------------------------   First section (title) --------------------------------------*/
 .section1 {
@@ -285,7 +287,6 @@ html, body{
 /* -------------------------------------   Second section (about) --------------------------------------*/
 .section2 {
   position: relative;
-  background-color: var(--main-color);
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -484,7 +485,6 @@ html, body{
 /* -------------------------------------   third section (stack) --------------------------------------*/
 .section3 {
   position: relative;
-  background-color: var(--main-color);
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -567,14 +567,13 @@ html, body{
 /* -------------------------------------   FOURTH SECTION (PROJECTS) --------------------------------------*/
 .section4 {
   position: relative;
-  background-color: var(--main-color);
   padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   /* overflow: hidden; */
-  height: 150%;
+  height: auto;
   /* clip-path: polygon(0 0, 100% 10%, 100% 95%, 0 80%); */
 }
 .section4-content{
@@ -597,7 +596,7 @@ html, body{
   display: block;
   width: 200px;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--alt-color);
   position: absolute;
   top: 50%;
   right: -215px;
@@ -656,7 +655,7 @@ html, body{
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -o-border-radius: 3px; 
 }
 
 /* PROJECT TEXTS */
@@ -911,7 +910,6 @@ html, body{
 /* -------------------------------------   SECTION 5 idk --------------------------------------*/
 .section5 {
   position: relative;
-  background-color: var(--main-color);
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -1271,34 +1269,16 @@ html, body{
 /* -------------------------------------   FADE IN ELEMENTS --------------------------------------*/
 /* .section2,
 .section3,
-.section4{
+.section4,
+.section5 {
   opacity: 0;
   transition: opacity 2s ease-out;
-  -webkit-transition: opacity 2s ease-out;
-  -moz-transition: opacity 2s ease-out;
-  -ms-transition: opacity 2s ease-out;
-  -o-transition: opacity 2s ease-out;
 }
 
-.section2.fade-in,
-.section3.fade-in,
-.section4.fade-in{
+.fade-in {
   opacity: 1;
 }
-
-.section5{
-  opacity: 0;
-  transition: opacity 2s ease-out;
-  -webkit-transition: opacity 2s ease-out;
-  -moz-transition: opacity 2s ease-out;
-  -ms-transition: opacity 2s ease-out;
-  -o-transition: opacity 2s ease-out;
-}
-
-.section5.fade-in{
-  opacity: 1;
-} */
-
+ */
 
 /* -------------------------------------   FOOTER ELEMENTS --------------------------------------*/
 .footer {
@@ -1381,5 +1361,6 @@ html, body{
   letter-spacing: 0.2em;
   font-weight: 800;
 }
+
 
 

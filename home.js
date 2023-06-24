@@ -63,36 +63,49 @@ window.addEventListener("load", function() {
 
 // Fade in elements
 
-function isInViewport(element) {
-  var rect = element.getBoundingClientRect();
-  return (
-    rect.bottom > 0 &&
-    rect.top < (window.innerHeight || document.documentElement.clientHeight)
-  );
-}
+// function isInViewport(element) {
+//   var rect = element.getBoundingClientRect();
+//   return (
+//     rect.top >= 0 &&
+//     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+//   );
+// }
 
-function fadeSectionIn(section) {
-  if (isInViewport(section)) {
-    section.classList.add('fade-in');
-  } else {
-    section.classList.remove('fade-in');
-  }
-}
+// function fadeSectionIn(section) {
+//   if (section === section4) {
+//     if (isInViewport(section) || isInViewport(section.parentNode)) {
+//       section.style.opacity = '1';
+//       section.style.transition = 'opacity 2s ease-out';
+//     } else {
+//       section.style.opacity = '0';
+//       section.style.transition = 'opacity 2s ease-out';
+//     }
+//   } else {
+//     if (isInViewport(section)) {
+//       section.style.opacity = '1';
+//       section.style.transition = 'opacity 2s ease-out';
+//     } else {
+//       section.style.opacity = '0';
+//       section.style.transition = 'opacity 2s ease-out';
+//     }
+//   }
+// }
 
-var section2 = document.querySelector('.section2');
-var section3 = document.querySelector('.section3');
-var section4 = document.querySelector('.section4');
-var section5 = document.querySelector('.section5');
+// var section2 = document.querySelector('.section2');
+// var section3 = document.querySelector('.section3');
+// var section4 = document.querySelector('.section4');
+// var section5 = document.querySelector('.section5');
 
-function handleScroll() {
-  fadeSectionIn(section2);
-  fadeSectionIn(section3);
-  fadeSectionIn(section4);
-  fadeSectionIn(section5);
-}
+// function handleScroll() {
+//   fadeSectionIn(section2);
+//   fadeSectionIn(section3);
+//   fadeSectionIn(section4);
+//   fadeSectionIn(section5);
+// }
 
-window.addEventListener('scroll', handleScroll);
-window.addEventListener('DOMContentLoaded', handleScroll);
+// window.addEventListener('scroll', handleScroll);
+// window.addEventListener('DOMContentLoaded', handleScroll);
+
 
 // footer fix
 document.addEventListener("scroll", () => {
@@ -114,9 +127,6 @@ window.addEventListener('DOMContentLoaded', function() {
   scrollAnimation.style.opacity = '0';
   scrollAnimationTwo[0].style.opacity = '0';
 });
-
-
-
 
 
 
@@ -144,3 +154,5 @@ function getSecondsToday() {
   let diff = now - today; 
   return Math.round(diff / 1000);
 }
+
+
