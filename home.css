@@ -23,13 +23,15 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
 }
 
 html, body{
 	width: 100%;
 	height: 100%;
 	scroll-behavior: smooth;
+  background: url(./images/bg-1.png) no-repeat center center fixed;
+  background-size: cover;
 }
 
 
@@ -51,7 +53,7 @@ html, body{
 
 /* -------------------------------------   First section (title) --------------------------------------*/
 .section1 {
-  background-color: #16181c;
+  /* background-color: #16181c; */
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -59,7 +61,7 @@ html, body{
   align-items: center;
 	height: 100%;
 	cursor: none;
-  background-image: url(./images/bg-1.png);
+  /* background-image: url(./images/bg-1.png); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
