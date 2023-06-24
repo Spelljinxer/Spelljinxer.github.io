@@ -1284,7 +1284,7 @@ html, body{
 
 /* -------------------------------------   FOOTER ELEMENTS --------------------------------------*/
 .footer {
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
   padding: 20px 0;
   text-align: center;
   margin-top: auto;
