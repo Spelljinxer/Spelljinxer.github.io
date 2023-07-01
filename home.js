@@ -123,7 +123,7 @@ document.addEventListener("scroll", () => {
 //scroll down animation in section 1
 window.addEventListener('DOMContentLoaded', function() {
   var scrollAnimation = document.getElementById('scroll-down-animation');
-  var scrollAnimationTwo = document.getElementsByClassName('box');
+  var scrollAnimationTwo = document.getElementsByClassName('box'); 
   scrollAnimation.style.opacity = '0';
   scrollAnimationTwo[0].style.opacity = '0';
 });
