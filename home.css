@@ -34,6 +34,10 @@ html, body{
   background-size: cover;
 }
 
+body{
+  height: 100vh !important;
+}
+
 
 /* -------------------------------------   SCROLLBAR  --------------------------------------*/
 ::-webkit-scrollbar {
